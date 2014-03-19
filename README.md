@@ -1,110 +1,136 @@
-# Sendgrid-ios
+# Sendgrid - Objective-C
 
 This library allows you to quickly and easily send emails through SendGrid using Objective-C.
 
 **Important:** This library requires [AFNetworking](https://github.com/AFNetworking/AFNetworking/wiki/Getting-Started-with-AFNetworking) 2.0 or higher.
 
-
 ```objective-c
-sendgrid *msg = [sendgrid user:@"username" andPass:@"password"];   
+[[Sendgrid sharedInstance] configSendgridWithUser:@"user" andPassword:@"password"];
 
-msg.to = @"foo@bar.com";
-msg.subject = @"subject goes here";
-msg.from = @"me@bar.com";
-msg.text = @"hello world";   
-msg.html = @"<h1>hello world!</h1>";
+SendgridMessage* message = [[Sendgrid sharedInstance] createNewMessage];
+[message addTo:@"Foo <foo@bar.com>"];
+[message addTo:@"foo1@bar.com"];
+[message addTo:@"foo2@bar.com" withName:@"Foo 2"];
+message.subject = "subject goes here";
+[message setFrom:@"Me <me@bar.com>"];
+msg.simpleTextBody = @"hello world";   
+msg.htmlBody = @"<h1>hello world!</h1>";
     
-[msg sendWithWeb];    
+[[Sendgrid sharedInstance] sendMessage:message withSuccess:nil andError:nil];
 ```
 
-## Installation via CocoaPods (Recommended Method)
-[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like SendGrid and its dependencies in your projects. Simply add the lines below to your existing Podfile or make a new 'Podfile' that contain the lines below. 
-
-#### Podfile
-
-```ruby
-platform :ios, '7.0'
-pod 'sendgrid', '~>  0.1.0'
-```
-
-Run the following in the command line
-```
-pod install
-```
-
-Be sure to open up the xcworkspace file now instead of the xcodeproj file. 
-
-## Alternative installation
-Install via Source
+## Install via Source
 
     1. Clone this repository.
-    2. Copy sendgrid.m and .h files to your project.
-    3. Import both sendgrid and AFNetworking in your project
+    2. Copy the Sendgrid folder to your project.
+    3. Import both Sendgrid and AFNetworking in your project
 
 ## Usage
 
-To begin using this library, create a new email object with your SendGrid credentials.
+To begin using this library, config the SendGrid singleton with your SendGrid credentials
 ```objective-c
-sendgrid *msg = [sendgrid user:@"username" andPass:@"password"];
+[[Sendgrid sharedInstance] configSendgridWithUser:@"user" andPassword:@"password"];
+```
+
+Create a new message
+```objective-c
+SendgridMessage* message = [[Sendgrid sharedInstance] createNewMessage];
 ```
 
 Customize the parameters of your email message.
 ```objective-c
-msg.tolist = @[@"foo1@bar.com", @"foo2@bar.com"];
-msg.subject = @"subject goes here";
-msg.from = @"me@bar.com";
-msg.text = @"hello world";   
-msg.html = @"<h1>hello world!</h1>";
+[message addTo:@"foo@bar.com"];
+message.subject = "subject goes here";
+[message setFrom:@"Me <me@bar.com>"];
+msg.simpleTextBody = @"hello world";   
+msg.htmlBody = @"<h1>hello world!</h1>";
 ```
 For the full list of available parameters, check out the [Docs](http://sendgrid.com/docs/API_Reference/Web_API/mail.html)
 
 ### Adding To addresses
 
-You can add a single address using the to property of the mail object
+You can add a to by the addTo method
 
 ```objective-c
-msg.to = @"foo@bar.com";
+[message addTo:@"foo@bar.com"];
 ```
 
-Or
+**Note** At least one to must be set.
 
-You can add multiple To addresses by setting the toList property
+### Adding a file attachment
+You can add any file to your message using the SendgridAttachment class
 
 ```objective-c
-msg.tolist = @[@"foo1@bar.com", @"foo2@bar.com"];
+SendgridAttachment* file = [[SendgridAttachment alloc] initWithData:data forMimeType:@"application/msword" withFileName:@"document.doc" asInline:NO];
+[message addAttachment:file];
 ```
-**Note** One or the other must be set.
+
+**Using the attachment factory**
+```objective-c
+SendgridAttachment* pdfFile = [SendgridAttachment createPDFAttachmentWithData:pdfData withName:@"document.pdf"];
+[message addAttachment:pdfFile];
+```
 
 ### Adding an image attachment
-You can add an image attachment to your email message. The method accepts a UIImage. 
+You can add an image attachment to your email message.
 
 ```objective-c
-[msg attachImage:self.photo];
+[message addAttachment:[createPNGAttachmentWithImage:self.photo withName:@"image.png" asInline:YES]];
 ```
 
 **Displaying attached image inline**
 ```objective-c
-msg.inlinePhoto = true;
-msg.html = @"<img src =\"cid:image.png\"><h1>hello world</h1>";
+SendgridAttachment* image = [SendgridAttachment createPNGAttachmentWithImage:self.photo withName:@"image.png" asInline:YES];
+[message addAttachment:image];
+message.htmlBody = [NSString stringWithFormat:@"<img src =\"%@\"><h1>hello world</h1>",image.inlineTag];
 ```
 
-### Adding custom headers
+### Using the SMTP API
 
-You can set custom headers in your email by using the addCustomHeader:withKey method. 
+You can use the [SMTP API](http://sendgrid.com/docs/API_Reference/SMTP_API/) by using the SendgridSmtpOptions class
+
+**Associating the options to the message**
+```objective-c
+SendgridSmtpOptions* options = [[SendgridSmtpOptions alloc] init];
+SendgridMessage* message = [[Sendgrid sharedInstance] createNewMessageWithSmtpOptions:options];
+```
+
+**Adding sub values**
+```objective-c
+[message addTo:@"foo@bar.com"];
+[options setSubstitutionValue:@"Foo" forKey:@"%name%" onEmail:@"foo@bar.com"];
+```
+
+**Adding roles**
+```objective-c
+[options setSubstitutionValue:@"%tester%" forKey:@"%role%" onEmail:@"foo@bar.com"];
+```
+
+**Adding sections**
+```objective-c
+[options addSection:@"%tester%" withValue:@"Hello tester %name%"];
+```
+
+**Adding Filters**
+```objective-c
+[options addFilter:[SendgridFilter createClickTrackFilterEnabled:YES]];
+```
 
 **Adding Categories**
 ```objective-c
-NSString *cat = @"billing_notifications";
-[msg addCustomHeader:cat withKey:@"category"];
+[options addCategory:@"billing_notifications"];
 ```
 
 **Adding Unique Arguments**
 ```objective-c
-NSDictionary *uarg = @{@"customerAccountNumber":@"55555",
-                           @"activationAttempt": @"1"};
-
-[msg addCustomHeader:uarg withKey:@"unique_args"];
+[options addUniqueArg:@"customerAccountNumber" withValue:@"55555"];
+[options addUniqueArg:@"activationAttempt" withValue:@"1"];
 ```
+
+## Documentation
+
+This project documentation was generated using the [AppleDoc](https://github.com/tomaz/appledoc) project.
+To install it to your XCode, install the AppleDoc and run the Documentation Target
 
 ## Contributing
 
