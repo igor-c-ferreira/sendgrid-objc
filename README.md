@@ -129,8 +129,14 @@ SendgridMessage* message = [[Sendgrid sharedInstance] createNewMessageWithSmtpOp
 
 ## Documentation
 
+### Project
+
 This project documentation was generated using the [AppleDoc](https://github.com/tomaz/appledoc) project.
-To install it to your XCode, install the AppleDoc and run the Documentation Target
+To install it to your XCode, install the AppleDoc and run the Documentation Target.
+
+### Docset
+
+You can find the Sendgrid.docset into the documentation folder
 
 ## Contributing
 
