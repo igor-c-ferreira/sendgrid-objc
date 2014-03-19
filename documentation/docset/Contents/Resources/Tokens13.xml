@@ -116,6 +116,18 @@
             <NodeRef refid="13"/>
 		</Token>
 		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AFPropertyListRequestSerializer/requestBySerializingRequest:withParameters:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFURLRequestSerialization.m</DeclaredIn>
+			
+			<Declaration>- (NSURLRequest *)requestBySerializingRequest:(NSURLRequest *)request withParameters:(id)parameters error:(NSError *__autoreleasing *)error</Declaration>
+			
+			
+			<Anchor>//api/name/requestBySerializingRequest:withParameters:error:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
         
 	</File>
 </Tokens>

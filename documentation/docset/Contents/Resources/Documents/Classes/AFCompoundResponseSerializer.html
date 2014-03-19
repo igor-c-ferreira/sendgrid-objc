@@ -51,6 +51,11 @@
 	
 	
 	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/responseObjectForResponse:data:error:">&nbsp;&nbsp;&nbsp;&nbsp;- responseObjectForResponse:data:error:</option>
+	
+	
 	
 </select>
 				</li>
@@ -88,6 +93,12 @@
 
 
 
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/responseObjectForResponse:data:error:">responseObjectForResponse:data:error:</a></span></li>
+	
+</ul></li>
+
 
 			</ul>
 		</nav>
@@ -123,7 +134,7 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p><code>AFCompoundSerializer</code> is a subclass of <a href="../Classes/AFHTTPResponseSerializer.html"><code>AFHTTPResponseSerializer</code></a> that delegates the response serialization to the first <a href="../Classes/AFHTTPResponseSerializer.html"><code>AFHTTPResponseSerializer</code></a> object that returns an object for <code>responseObjectForResponse:data:error:</code>, falling back on the default behavior of <a href="../Classes/AFHTTPResponseSerializer.html"><code>AFHTTPResponseSerializer</code></a>. This is useful for supporting multiple potential types and structures of server responses with a single serializer.</p>
+						<p><code>AFCompoundSerializer</code> is a subclass of <a href="../Classes/AFHTTPResponseSerializer.html"><code>AFHTTPResponseSerializer</code></a> that delegates the response serialization to the first <a href="../Classes/AFHTTPResponseSerializer.html"><code>AFHTTPResponseSerializer</code></a> object that returns an object for <a href="#//api/name/responseObjectForResponse:data:error:"><code>responseObjectForResponse:data:error:</code></a>, falling back on the default behavior of <a href="../Classes/AFHTTPResponseSerializer.html"><code>AFHTTPResponseSerializer</code></a>. This is useful for supporting multiple potential types and structures of server responses with a single serializer.</p>
 					</div>
 					
 					
@@ -136,7 +147,7 @@
 						
 						
 						
-						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
 
 						<ul class="task-list">
 							<li>
@@ -148,6 +159,20 @@
 </li><li>
 	<span class="tooltip">
 		<code><a href="#//api/name/compoundSerializerWithResponseSerializers:">+&nbsp;compoundSerializerWithResponseSerializers:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/responseObjectForResponse:data:error:">&ndash;&nbsp;responseObjectForResponse:data:error:</a></code>
 	</span>
 	
 	
@@ -252,6 +277,44 @@
 					</div>
 					
 					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/responseObjectForResponse:data:error:" title="responseObjectForResponse:data:error:"></a>
+	<h3 class="subsubtitle method-title">responseObjectForResponse:data:error:</h3>
+	
+	
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)responseObjectForResponse:(NSURLResponse *)<em>response</em> data:(NSData *)<em>data</em> error:(NSError *__autoreleasing *)<em>error</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">AFURLResponseSerialization.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
 					
 					
                     

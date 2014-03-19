@@ -44,7 +44,7 @@
 -(id)initTXTAttachmentWithData:(NSData*)txtFile withName:(NSString*)name;
 /*!
 @abstract   Create a Rich text Attachment
-@param  rtfFile The NSData with the content of the file
+@param  rtffile The NSData with the content of the file
 @param  name    The name of the file
 @return RTF Attachment
 */

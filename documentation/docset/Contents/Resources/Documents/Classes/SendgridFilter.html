@@ -1,0 +1,1368 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SendgridFilter Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.2 (build 963)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">Sample </a></h1>
+				<a id="developerHome" href="../index.html">SendGrid</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SendgridFilter Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/enabled">&nbsp;&nbsp;&nbsp;&nbsp;enabled</option>
+	
+	<option value="//api/name/settings">&nbsp;&nbsp;&nbsp;&nbsp;settings</option>
+	
+	<option value="//api/name/type">&nbsp;&nbsp;&nbsp;&nbsp;type</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/createBCCFilterEnabled:withEmail:">&nbsp;&nbsp;&nbsp;&nbsp;+ createBCCFilterEnabled:withEmail:</option>
+	
+	<option value="//api/name/createBypassFilterEnabled:">&nbsp;&nbsp;&nbsp;&nbsp;+ createBypassFilterEnabled:</option>
+	
+	<option value="//api/name/createClickTrackFilterEnabled:">&nbsp;&nbsp;&nbsp;&nbsp;+ createClickTrackFilterEnabled:</option>
+	
+	<option value="//api/name/createDkimFilterWithDomain:usingFrom:">&nbsp;&nbsp;&nbsp;&nbsp;+ createDkimFilterWithDomain:usingFrom:</option>
+	
+	<option value="//api/name/createDomainKeysFilterEnabled:withDomain:sendingHeader:">&nbsp;&nbsp;&nbsp;&nbsp;+ createDomainKeysFilterEnabled:withDomain:sendingHeader:</option>
+	
+	<option value="//api/name/createFooterFilterEnabled:withHTMLText:andSimpleText:">&nbsp;&nbsp;&nbsp;&nbsp;+ createFooterFilterEnabled:withHTMLText:andSimpleText:</option>
+	
+	<option value="//api/name/createForwardSpamFilterEnabled:toEmail:">&nbsp;&nbsp;&nbsp;&nbsp;+ createForwardSpamFilterEnabled:toEmail:</option>
+	
+	<option value="//api/name/createGAnalyticsFilterEnabled:withSource:medium:term:content:andCampaign:">&nbsp;&nbsp;&nbsp;&nbsp;+ createGAnalyticsFilterEnabled:withSource:medium:term:content:andCampaign:</option>
+	
+	<option value="//api/name/createGravatarFilterEnabled:">&nbsp;&nbsp;&nbsp;&nbsp;+ createGravatarFilterEnabled:</option>
+	
+	<option value="//api/name/createOpenTrackFitlerEnabled:">&nbsp;&nbsp;&nbsp;&nbsp;+ createOpenTrackFitlerEnabled:</option>
+	
+	<option value="//api/name/createSpamCheckFilterEnabled:withMaxScore:andUrl:">&nbsp;&nbsp;&nbsp;&nbsp;+ createSpamCheckFilterEnabled:withMaxScore:andUrl:</option>
+	
+	<option value="//api/name/createSubscriptionTrackFilterEnabled:withHTML:simpleText:andTag:">&nbsp;&nbsp;&nbsp;&nbsp;+ createSubscriptionTrackFilterEnabled:withHTML:simpleText:andTag:</option>
+	
+	<option value="//api/name/createTemplateFilterEnabled:withHtml:">&nbsp;&nbsp;&nbsp;&nbsp;+ createTemplateFilterEnabled:withHtml:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithType:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithType:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enabled">enabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/settings">settings</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/type">type</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createBCCFilterEnabled:withEmail:">createBCCFilterEnabled:withEmail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createBypassFilterEnabled:">createBypassFilterEnabled:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createClickTrackFilterEnabled:">createClickTrackFilterEnabled:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createDkimFilterWithDomain:usingFrom:">createDkimFilterWithDomain:usingFrom:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createDomainKeysFilterEnabled:withDomain:sendingHeader:">createDomainKeysFilterEnabled:withDomain:sendingHeader:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createFooterFilterEnabled:withHTMLText:andSimpleText:">createFooterFilterEnabled:withHTMLText:andSimpleText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createForwardSpamFilterEnabled:toEmail:">createForwardSpamFilterEnabled:toEmail:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createGAnalyticsFilterEnabled:withSource:medium:term:content:andCampaign:">createGAnalyticsFilterEnabled:withSource:medium:term:content:andCampaign:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createGravatarFilterEnabled:">createGravatarFilterEnabled:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createOpenTrackFitlerEnabled:">createOpenTrackFitlerEnabled:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createSpamCheckFilterEnabled:withMaxScore:andUrl:">createSpamCheckFilterEnabled:withMaxScore:andUrl:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createSubscriptionTrackFilterEnabled:withHTML:simpleText:andTag:">createSubscriptionTrackFilterEnabled:withHTML:simpleText:andTag:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createTemplateFilterEnabled:withHtml:">createTemplateFilterEnabled:withHtml:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithType:">initWithType:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SendgridFilter Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SendgridFilter Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SendgridFilter.h<br />SendgridFilter.m</td>
+</tr>
+						</tbody></table></div>
+					
+                    
+                    
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/type">&nbsp;&nbsp;type</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/settings">&nbsp;&nbsp;settings</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enabled">&nbsp;&nbsp;enabled</a></code>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithType:">&ndash;&nbsp;initWithType:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createBCCFilterEnabled:withEmail:">+&nbsp;createBCCFilterEnabled:withEmail:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createBypassFilterEnabled:">+&nbsp;createBypassFilterEnabled:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createClickTrackFilterEnabled:">+&nbsp;createClickTrackFilterEnabled:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createDkimFilterWithDomain:usingFrom:">+&nbsp;createDkimFilterWithDomain:usingFrom:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createDomainKeysFilterEnabled:withDomain:sendingHeader:">+&nbsp;createDomainKeysFilterEnabled:withDomain:sendingHeader:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createFooterFilterEnabled:withHTMLText:andSimpleText:">+&nbsp;createFooterFilterEnabled:withHTMLText:andSimpleText:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createForwardSpamFilterEnabled:toEmail:">+&nbsp;createForwardSpamFilterEnabled:toEmail:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createGAnalyticsFilterEnabled:withSource:medium:term:content:andCampaign:">+&nbsp;createGAnalyticsFilterEnabled:withSource:medium:term:content:andCampaign:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createGravatarFilterEnabled:">+&nbsp;createGravatarFilterEnabled:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createOpenTrackFitlerEnabled:">+&nbsp;createOpenTrackFitlerEnabled:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createSpamCheckFilterEnabled:withMaxScore:andUrl:">+&nbsp;createSpamCheckFilterEnabled:withMaxScore:andUrl:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createSubscriptionTrackFilterEnabled:withHTML:simpleText:andTag:">+&nbsp;createSubscriptionTrackFilterEnabled:withHTML:simpleText:andTag:</a></code>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createTemplateFilterEnabled:withHtml:">+&nbsp;createTemplateFilterEnabled:withHtml:</a></code>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/enabled" title="enabled"></a>
+	<h3 class="subsubtitle method-title">enabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Flag to indicate if the filter is enabled or not (The same configuration will be send to the API)</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL enabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/settings" title="settings"></a>
+	<h3 class="subsubtitle method-title">settings</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The holder of the configuration of the filter</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSDictionary *settings</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/type" title="type"></a>
+	<h3 class="subsubtitle method-title">type</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Type of the filter. After the creation, this type cannot be changed</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSString *type</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/createBCCFilterEnabled:withEmail:" title="createBCCFilterEnabled:withEmail:"></a>
+	<h3 class="subsubtitle method-title">createBCCFilterEnabled:withEmail:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sends a BCC copy of the email created in this transaction to the address specified.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createBCCFilterEnabled:(BOOL)<em>enabled</em> withEmail:(NSString *)<em>email</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>Disable or enable this App</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>email</em></dt>
+			<dd><p>Email address destination for the bcc message</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createBypassFilterEnabled:" title="createBypassFilterEnabled:"></a>
+	<h3 class="subsubtitle method-title">createBypassFilterEnabled:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Some emails are too important to do normal list management checks, such as password resets or critical alerts.
+Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the e-mail for delivery.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createBypassFilterEnabled:(BOOL)<em>enabled</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>Disable or enable this App</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createClickTrackFilterEnabled:" title="createClickTrackFilterEnabled:"></a>
+	<h3 class="subsubtitle method-title">createClickTrackFilterEnabled:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Rewrites links in e-mail text and html bodies to go through our webservers, allowing for tracking when a link is clicked on.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createClickTrackFilterEnabled:(BOOL)<em>enabled</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>Disable or enable this App</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createDkimFilterWithDomain:usingFrom:" title="createDkimFilterWithDomain:usingFrom:"></a>
+	<h3 class="subsubtitle method-title">createDkimFilterWithDomain:usingFrom:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows you to specify the domain to use to sign messages with DKIM certification.
+This domain should match the domain in the From address of your e-mail.
+For more info, check out these details on DKIM ( <a href="http://sendgrid.com/docs/Apps/dkim.html">http://sendgrid.com/docs/Apps/dkim.html</a> ).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createDkimFilterWithDomain:(NSString *)<em>domain</em> usingFrom:(BOOL)<em>useFrom</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>domain</em></dt>
+			<dd><p>The domain you would like your DKIM certification signed with</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>useFrom</em></dt>
+			<dd><p>If <a href="#//api/name/enabled">enabled</a>, the domain in the From: header of the email will be used to sign your DKIM</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createDomainKeysFilterEnabled:withDomain:sendingHeader:" title="createDomainKeysFilterEnabled:withDomain:sendingHeader:"></a>
+	<h3 class="subsubtitle method-title">createDomainKeysFilterEnabled:withDomain:sendingHeader:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows you to specify the domain to use to sign messages with Domain Keys.
+This domain should match the domain in the From address of your e-mail.
+For more info, check out these details on Domain Keys ( <a href="http://sendgrid.com/docs/Apps/domain_keys.html">http://sendgrid.com/docs/Apps/domain_keys.html</a> ).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createDomainKeysFilterEnabled:(BOOL)<em>enabled</em> withDomain:(NSString *)<em>domain</em> sendingHeader:(BOOL)<em>header</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>Disable or enable this App</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>domain</em></dt>
+			<dd><p>The domain to sign messages as</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>header</em></dt>
+			<dd><p>Insert a Sender header if the domain specified does not match the From address.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createFooterFilterEnabled:withHTMLText:andSimpleText:" title="createFooterFilterEnabled:withHTMLText:andSimpleText:"></a>
+	<h3 class="subsubtitle method-title">createFooterFilterEnabled:withHTMLText:andSimpleText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Inserts a footer at the bottom of the text and HTML bodies.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createFooterFilterEnabled:(BOOL)<em>enabled</em> withHTMLText:(NSString *)<em>html</em> andSimpleText:(NSString *)<em>simple</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>Disable or enable this App</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>html</em></dt>
+			<dd><p>String containing html body</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>simple</em></dt>
+			<dd><p>String containing text body</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createForwardSpamFilterEnabled:toEmail:" title="createForwardSpamFilterEnabled:toEmail:"></a>
+	<h3 class="subsubtitle method-title">createForwardSpamFilterEnabled:toEmail:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Allows for a copy of spam reports to be forwarded to an email address.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createForwardSpamFilterEnabled:(BOOL)<em>enabled</em> toEmail:(NSString *)<em>email</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>Disable or enable this App</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>email</em></dt>
+			<dd><p>Email address destination for spam report to go to</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createGAnalyticsFilterEnabled:withSource:medium:term:content:andCampaign:" title="createGAnalyticsFilterEnabled:withSource:medium:term:content:andCampaign:"></a>
+	<h3 class="subsubtitle method-title">createGAnalyticsFilterEnabled:withSource:medium:term:content:andCampaign:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Re-writes links to integrate with Google Analytics.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createGAnalyticsFilterEnabled:(BOOL)<em>enabled</em> withSource:(NSString *)<em>source</em> medium:(NSString *)<em>medium</em> term:(NSString *)<em>term</em> content:(NSString *)<em>content</em> andCampaign:(NSString *)<em>campaign</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>Disable or enable this App</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>source</em></dt>
+			<dd><p>Value for the utm_source field</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>medium</em></dt>
+			<dd><p>Value for the utm_medium field</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>term</em></dt>
+			<dd><p>Value for the utm_term field</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>content</em></dt>
+			<dd><p>Value for the utm_content field</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>campaign</em></dt>
+			<dd><p>Value for the utm_campaign field</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createGravatarFilterEnabled:" title="createGravatarFilterEnabled:"></a>
+	<h3 class="subsubtitle method-title">createGravatarFilterEnabled:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Inserts an img tag at the bottom of the html section of an e-mail to display the gravatar associated with the mail sender.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createGravatarFilterEnabled:(BOOL)<em>enabled</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>Disable or enable this App</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createOpenTrackFitlerEnabled:" title="createOpenTrackFitlerEnabled:"></a>
+	<h3 class="subsubtitle method-title">createOpenTrackFitlerEnabled:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Inserts an <img> tag at the bottom of the html section of an e-mail which will be used to track if an e-mail is opened.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createOpenTrackFitlerEnabled:(BOOL)<em>enabled</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>Disable or enable this App</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createSpamCheckFilterEnabled:withMaxScore:andUrl:" title="createSpamCheckFilterEnabled:withMaxScore:andUrl:"></a>
+	<h3 class="subsubtitle method-title">createSpamCheckFilterEnabled:withMaxScore:andUrl:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Tests message with SpamAssassin ( <a href="http://spamassassin.apache.org/">http://spamassassin.apache.org/</a> ) to determine if it is spam, and drop it if it is.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createSpamCheckFilterEnabled:(BOOL)<em>enabled</em> withMaxScore:(CGFloat)<em>maxScore</em> andUrl:(NSString *)<em>url</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>Disable or enable this App</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>maxScore</em></dt>
+			<dd><p>Score after which the message will be dropped (default is 5.0, higher scores indicate higher likelihood of spam)</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>url</em></dt>
+			<dd><p>An optional url to POST the email and a copy of the report to</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createSubscriptionTrackFilterEnabled:withHTML:simpleText:andTag:" title="createSubscriptionTrackFilterEnabled:withHTML:simpleText:andTag:"></a>
+	<h3 class="subsubtitle method-title">createSubscriptionTrackFilterEnabled:withHTML:simpleText:andTag:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Inserts a subscription management link at the bottom of the text and html bodies or insert the link anywhere in the email.
+If you wish to append an unsubscription link, use the text/html and text/plain paremeters.
+However, if you wish to have the link replace a tag (such as [unsubscribe]), use the replace parameter.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createSubscriptionTrackFilterEnabled:(BOOL)<em>enabled</em> withHTML:(NSString *)<em>html</em> simpleText:(NSString *)<em>simple</em> andTag:(NSString *)<em>tag</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>Disable or enable this App</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>html</em></dt>
+			<dd><p>HTML to be appended to the email, with the subscription tracking link. You may control where the link is by using a tag like so: &lt;% link text %></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>simple</em></dt>
+			<dd><p>Text to be appended to the email, with the subscription tracking link. You may control where the link is by using a tag like so: &lt;% %></p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tag</em></dt>
+			<dd><p>A tag that will be replaced with the unsubscribe URL (e.g. -unsubscribe_link-). If this parameter is included, it will override html and plain.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/createTemplateFilterEnabled:withHtml:" title="createTemplateFilterEnabled:withHtml:"></a>
+	<h3 class="subsubtitle method-title">createTemplateFilterEnabled:withHtml:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Wraps a template around your email content. Useful for sending out marketing email and other nicely formatted messages.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (instancetype)createTemplateFilterEnabled:(BOOL)<em>enabled</em> withHtml:(NSString *)<em>html</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>enabled</em></dt>
+			<dd><p>Disable or enable this App</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>html</em></dt>
+			<dd><p>String containing html content for the template (must contain a &lt;% body %> tag)</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Formatted Filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithType:" title="initWithType:"></a>
+	<h3 class="subsubtitle method-title">initWithType:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Init an empty filter with a specific <a href="#//api/name/type">type</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithType:(NSString *)<em>type</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>type</em></dt>
+			<dd><p>Type of the filter</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Empty filter</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SendgridFilter.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+                    
+                    
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2014 SendGrid. All rights reserved. (Last updated: 2014-03-19)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2 (build 963)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

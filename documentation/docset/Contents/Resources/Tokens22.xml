@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIAlertView+AFNetworking.html">
+	<File path="Classes/SendgridAttachment.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIAlertView(AFNetworking)</TokenIdentifier>
-			<Abstract type="html">This category adds methods to the UIKit framework&apos;s UIAlertView class. The methods in this category provide support for automatically showing an alert if a session task or request operation finishes with an error. Alert title and message are filled from the corresponding localizedDescription &amp;amp; localizedRecoverySuggestion or localizedFailureReason of the error.</Abstract>
-			<DeclaredIn>UIAlertView+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cl/SendgridAttachment</TokenIdentifier>
+			<Abstract type="html">Class created to be a holder of the attachment files</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
             
 			
 			<NodeRef refid="22"/>
@@ -13,94 +13,413 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIAlertView/showAlertViewForTaskWithErrorOnCompletion:delegate:</TokenIdentifier>
-			<Abstract type="html">Shows an alert view with the error of the specified session task, if any.</Abstract>
-			<DeclaredIn>UIAlertView+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/setIsInline:</TokenIdentifier>
+			<Abstract type="html">Set if the attachment will be used as an inline</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
 			
-			<Declaration>+ (void)showAlertViewForTaskWithErrorOnCompletion:(NSURLSessionTask *)task delegate:(id)delegate</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>task</Name>
-					<Abstract type="html">The session task.</Abstract>
-				</Parameter><Parameter>
-					<Name>delegate</Name>
-					<Abstract type="html">The alert view delegate.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) BOOL isInline</Declaration>
 			
-			<Anchor>//api/name/showAlertViewForTaskWithErrorOnCompletion:delegate:</Anchor>
+			
+			<Anchor>//api/name/isInline</Anchor>
             <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIAlertView/showAlertViewForTaskWithErrorOnCompletion:delegate:cancelButtonTitle:otherButtonTitles:</TokenIdentifier>
-			<Abstract type="html">Shows an alert view with the error of the specified session task, if any, with a custom cancel button title and other button titles.</Abstract>
-			<DeclaredIn>UIAlertView+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/isInline</TokenIdentifier>
+			<Abstract type="html">Set if the attachment will be used as an inline</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
 			
-			<Declaration>+ (void)showAlertViewForTaskWithErrorOnCompletion:(NSURLSessionTask *)task delegate:(id)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>task</Name>
-					<Abstract type="html">The session task.</Abstract>
-				</Parameter><Parameter>
-					<Name>delegate</Name>
-					<Abstract type="html">The alert view delegate.</Abstract>
-				</Parameter><Parameter>
-					<Name>cancelButtonTitle</Name>
-					<Abstract type="html">The title of the cancel button or nil if there is no cancel button. Using this argument is equivalent to setting the cancel button index to the value returned by invoking addButtonWithTitle: specifying this title.</Abstract>
-				</Parameter><Parameter>
-					<Name>otherButtonTitles</Name>
-					<Abstract type="html">The title of another button. Using this argument is equivalent to invoking addButtonWithTitle: with this title to add more buttons. Too many buttons can cause the alert view to scroll. For guidelines on the best ways to use an alert in an app, see &quot;Temporary Views&quot;. Titles of additional buttons to add to the receiver, terminated with nil.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) BOOL isInline</Declaration>
 			
-			<Anchor>//api/name/showAlertViewForTaskWithErrorOnCompletion:delegate:cancelButtonTitle:otherButtonTitles:</Anchor>
+			
+			<Anchor>//api/name/isInline</Anchor>
             <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIAlertView/showAlertViewForRequestOperationWithErrorOnCompletion:delegate:</TokenIdentifier>
-			<Abstract type="html">Shows an alert view with the error of the specified request operation, if any.</Abstract>
-			<DeclaredIn>UIAlertView+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instp/SendgridAttachment/isInline</TokenIdentifier>
+			<Abstract type="html">Set if the attachment will be used as an inline</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
 			
-			<Declaration>+ (void)showAlertViewForRequestOperationWithErrorOnCompletion:(AFURLConnectionOperation *)operation delegate:(id)delegate</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>operation</Name>
-					<Abstract type="html">The request operation.</Abstract>
-				</Parameter><Parameter>
-					<Name>delegate</Name>
-					<Abstract type="html">The alert view delegate.</Abstract>
-				</Parameter>
-			</Parameters>
+			<Declaration>@property (nonatomic, readonly) BOOL isInline</Declaration>
 			
-			<Anchor>//api/name/showAlertViewForRequestOperationWithErrorOnCompletion:delegate:</Anchor>
+			
+			<Anchor>//api/name/isInline</Anchor>
             <NodeRef refid="22"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIAlertView/showAlertViewForRequestOperationWithErrorOnCompletion:delegate:cancelButtonTitle:otherButtonTitles:</TokenIdentifier>
-			<Abstract type="html">Shows an alert view with the error of the specified request operation, if any, with a custom cancel button title and other button titles.</Abstract>
-			<DeclaredIn>UIAlertView+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/setInlineTag:</TokenIdentifier>
+			<Abstract type="html">Tag used to register the attachment for the inline</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
 			
-			<Declaration>+ (void)showAlertViewForRequestOperationWithErrorOnCompletion:(AFURLConnectionOperation *)operation delegate:(id)delegate cancelButtonTitle:(NSString *)cancelButtonTitle otherButtonTitles:(NSString *)otherButtonTitles, ...</Declaration>
+			<Declaration>@property (nonatomic, readonly) NSString *inlineTag</Declaration>
+			
+			
+			<Anchor>//api/name/inlineTag</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/inlineTag</TokenIdentifier>
+			<Abstract type="html">Tag used to register the attachment for the inline</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inlineTag</Declaration>
+			
+			
+			<Anchor>//api/name/inlineTag</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SendgridAttachment/inlineTag</TokenIdentifier>
+			<Abstract type="html">Tag used to register the attachment for the inline</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSString *inlineTag</Declaration>
+			
+			
+			<Anchor>//api/name/inlineTag</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/setFileName:</TokenIdentifier>
+			<Abstract type="html">The filename of the attachment</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *fileName</Declaration>
+			
+			
+			<Anchor>//api/name/fileName</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/fileName</TokenIdentifier>
+			<Abstract type="html">The filename of the attachment</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *fileName</Declaration>
+			
+			
+			<Anchor>//api/name/fileName</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SendgridAttachment/fileName</TokenIdentifier>
+			<Abstract type="html">The filename of the attachment</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *fileName</Declaration>
+			
+			
+			<Anchor>//api/name/fileName</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/setBinaryContent:</TokenIdentifier>
+			<Abstract type="html">The binary array that holds the attachment content</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSData *binaryContent</Declaration>
+			
+			
+			<Anchor>//api/name/binaryContent</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/binaryContent</TokenIdentifier>
+			<Abstract type="html">The binary array that holds the attachment content</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSData *binaryContent</Declaration>
+			
+			
+			<Anchor>//api/name/binaryContent</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SendgridAttachment/binaryContent</TokenIdentifier>
+			<Abstract type="html">The binary array that holds the attachment content</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSData *binaryContent</Declaration>
+			
+			
+			<Anchor>//api/name/binaryContent</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/setMimeType:</TokenIdentifier>
+			<Abstract type="html">Mime type of the attachment</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *mimeType</Declaration>
+			
+			
+			<Anchor>//api/name/mimeType</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/mimeType</TokenIdentifier>
+			<Abstract type="html">Mime type of the attachment</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *mimeType</Declaration>
+			
+			
+			<Anchor>//api/name/mimeType</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SendgridAttachment/mimeType</TokenIdentifier>
+			<Abstract type="html">Mime type of the attachment</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong, readonly) NSString *mimeType</Declaration>
+			
+			
+			<Anchor>//api/name/mimeType</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/setToken:</TokenIdentifier>
+			<Abstract type="html">ID Token of this file</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *token</Declaration>
+			
+			
+			<Anchor>//api/name/token</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/token</TokenIdentifier>
+			<Abstract type="html">ID Token of this file</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *token</Declaration>
+			
+			
+			<Anchor>//api/name/token</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SendgridAttachment/token</TokenIdentifier>
+			<Abstract type="html">ID Token of this file</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *token</Declaration>
+			
+			
+			<Anchor>//api/name/token</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/initPDFAttachmentWithData:withName:</TokenIdentifier>
+			<Abstract type="html">Create a PDF Attachment</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>- (id)initPDFAttachmentWithData:(NSData *)pdfFile withName:(NSString *)name</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>operation</Name>
-					<Abstract type="html">The request operation.</Abstract>
+					<Name>pdfFile</Name>
+					<Abstract type="html">The NSData with the content of the file</Abstract>
 				</Parameter><Parameter>
-					<Name>delegate</Name>
-					<Abstract type="html">The alert view delegate.</Abstract>
+					<Name>name</Name>
+					<Abstract type="html">The name of the file</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">PDF Attachment</Abstract></ReturnValue>
+			<Anchor>//api/name/initPDFAttachmentWithData:withName:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/initTXTAttachmentWithData:withName:</TokenIdentifier>
+			<Abstract type="html">Create a simple txt Attachment</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>- (id)initTXTAttachmentWithData:(NSData *)txtFile withName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>txtFile</Name>
+					<Abstract type="html">The NSData with the content of the file</Abstract>
 				</Parameter><Parameter>
-					<Name>cancelButtonTitle</Name>
-					<Abstract type="html">The title of the cancel button or nil if there is no cancel button. Using this argument is equivalent to setting the cancel button index to the value returned by invoking addButtonWithTitle: specifying this title.</Abstract>
+					<Name>name</Name>
+					<Abstract type="html">The name of the file</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">TXT Attachment</Abstract></ReturnValue>
+			<Anchor>//api/name/initTXTAttachmentWithData:withName:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/initRTFAttachmentWithData:withName:</TokenIdentifier>
+			<Abstract type="html">Create a Rich text Attachment</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>- (id)initRTFAttachmentWithData:(NSData *)rtffile withName:(NSString *)name</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>rtffile</Name>
+					<Abstract type="html">The NSData with the content of the file</Abstract>
 				</Parameter><Parameter>
-					<Name>otherButtonTitles</Name>
-					<Abstract type="html">The title of another button. Using this argument is equivalent to invoking addButtonWithTitle: with this title to add more buttons. Too many buttons can cause the alert view to scroll. For guidelines on the best ways to use an alert in an app, see &quot;Temporary Views&quot;. Titles of additional buttons to add to the receiver, terminated with nil.</Abstract>
+					<Name>name</Name>
+					<Abstract type="html">The name of the file</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">RTF Attachment</Abstract></ReturnValue>
+			<Anchor>//api/name/initRTFAttachmentWithData:withName:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/initPNGAttachmentWithData:withName:asInline:</TokenIdentifier>
+			<Abstract type="html">Create a PNG Attachment that can be sent inline</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>- (id)initPNGAttachmentWithData:(NSData *)pngFile withName:(NSString *)name asInline:(BOOL)isInline</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pngFile</Name>
+					<Abstract type="html">The NSData with the content of the file</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the file</Abstract>
+				</Parameter><Parameter>
+					<Name>isInline</Name>
+					<Abstract type="html">A flag that indicates if the attachment will be sent as inline or not</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">PNG Attachment</Abstract></ReturnValue>
+			<Anchor>//api/name/initPNGAttachmentWithData:withName:asInline:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/initPNGAttachmentWithImage:withName:asInline:</TokenIdentifier>
+			<Abstract type="html">Create a PNG Attachment that can be sent inline</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>- (id)initPNGAttachmentWithImage:(UIImage *)pngFile withName:(NSString *)name asInline:(BOOL)isInline</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pngFile</Name>
+					<Abstract type="html">The UIImage with the content of the file</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the file</Abstract>
+				</Parameter><Parameter>
+					<Name>isInline</Name>
+					<Abstract type="html">A flag that indicates if the attachment will be sent as inline or not</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">PNG Attachment</Abstract></ReturnValue>
+			<Anchor>//api/name/initPNGAttachmentWithImage:withName:asInline:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/initJPGAttachmentWithData:withName:asInline:</TokenIdentifier>
+			<Abstract type="html">Create a JPG Attachment that can be sent inline</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>- (id)initJPGAttachmentWithData:(NSData *)jpgFile withName:(NSString *)name asInline:(BOOL)isInline</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>jpgFile</Name>
+					<Abstract type="html">The NSData with the content of the file</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the file</Abstract>
+				</Parameter><Parameter>
+					<Name>isInline</Name>
+					<Abstract type="html">A flag that indicates if the attachment will be sent as inline or not</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">JPG Attachment</Abstract></ReturnValue>
+			<Anchor>//api/name/initJPGAttachmentWithData:withName:asInline:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/initJPGAttachmentWithImage:withName:asInline:</TokenIdentifier>
+			<Abstract type="html">Create a JPG Attachment that can be sent inline</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>- (id)initJPGAttachmentWithImage:(UIImage *)jpgFile withName:(NSString *)name asInline:(BOOL)isInline</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>jpgFile</Name>
+					<Abstract type="html">The UIImage with the content of the file</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The name of the file</Abstract>
+				</Parameter><Parameter>
+					<Name>isInline</Name>
+					<Abstract type="html">A flag that indicates if the attachment will be sent as inline or not</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">JPG Attachment</Abstract></ReturnValue>
+			<Anchor>//api/name/initJPGAttachmentWithImage:withName:asInline:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/initWithData:forMimeType:withFileName:asInline:</TokenIdentifier>
+			<Abstract type="html">Initializer of the attachment</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>- (id)initWithData:(NSData *)data forMimeType:(NSString *)mimeType withFileName:(NSString *)name asInline:(BOOL)isInline</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The binary array of the content</Abstract>
+				</Parameter><Parameter>
+					<Name>mimeType</Name>
+					<Abstract type="html">The mime type of the file</Abstract>
+				</Parameter><Parameter>
+					<Name>name</Name>
+					<Abstract type="html">The file name</Abstract>
+				</Parameter><Parameter>
+					<Name>isInline</Name>
+					<Abstract type="html">A flag to indicate if the file will be used as inline</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/showAlertViewForRequestOperationWithErrorOnCompletion:delegate:cancelButtonTitle:otherButtonTitles:</Anchor>
+			<Anchor>//api/name/initWithData:forMimeType:withFileName:asInline:</Anchor>
+            <NodeRef refid="22"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SendgridAttachment/changeFileName:</TokenIdentifier>
+			<Abstract type="html">Method to change the attached file name</Abstract>
+			<DeclaredIn>SendgridAttachment.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)changeFileName:(NSString *)fileName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>fileName</Name>
+					<Abstract type="html">Name that will be set to the file</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/changeFileName:</Anchor>
             <NodeRef refid="22"/>
 		</Token>
 		
