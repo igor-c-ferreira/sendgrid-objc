@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SendgridFilter.html">
+	<File path="Categories/UIButton+AFNetworking.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SendgridFilter</TokenIdentifier>
-			<Abstract type="html">Class created to be a factory to the SMTP API filter objects
-</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/UIButton(AFNetworking)</TokenIdentifier>
+			<Abstract type="html">This category adds methods to the UIKit framework&apos;s UIButton class. The methods in this category provide support for loading remote images and background images asynchronously from a URL.</Abstract>
+			<DeclaredIn>UIButton+AFNetworking.h</DeclaredIn>
             
 			
 			<NodeRef refid="23"/>
@@ -14,409 +13,164 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridFilter/setType:</TokenIdentifier>
-			<Abstract type="html">Type of the filter. After the creation, this type cannot be changed</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIButton/setImageForState:withURL:</TokenIdentifier>
+			<Abstract type="html">Asynchronously downloads an image from the specified URL, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.</Abstract>
+			<DeclaredIn>UIButton+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridFilter/type</TokenIdentifier>
-			<Abstract type="html">Type of the filter. After the creation, this type cannot be changed</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridFilter/type</TokenIdentifier>
-			<Abstract type="html">Type of the filter. After the creation, this type cannot be changed</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *type</Declaration>
-			
-			
-			<Anchor>//api/name/type</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridFilter/setSettings:</TokenIdentifier>
-			<Abstract type="html">The holder of the configuration of the filter</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *settings</Declaration>
-			
-			
-			<Anchor>//api/name/settings</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridFilter/settings</TokenIdentifier>
-			<Abstract type="html">The holder of the configuration of the filter</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *settings</Declaration>
-			
-			
-			<Anchor>//api/name/settings</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridFilter/settings</TokenIdentifier>
-			<Abstract type="html">The holder of the configuration of the filter</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *settings</Declaration>
-			
-			
-			<Anchor>//api/name/settings</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridFilter/setEnabled:</TokenIdentifier>
-			<Abstract type="html">Flag to indicate if the filter is enabled or not (The same configuration will be send to the API)</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL enabled</Declaration>
-			
-			
-			<Anchor>//api/name/enabled</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridFilter/enabled</TokenIdentifier>
-			<Abstract type="html">Flag to indicate if the filter is enabled or not (The same configuration will be send to the API)</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL enabled</Declaration>
-			
-			
-			<Anchor>//api/name/enabled</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridFilter/enabled</TokenIdentifier>
-			<Abstract type="html">Flag to indicate if the filter is enabled or not (The same configuration will be send to the API)</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, assign) BOOL enabled</Declaration>
-			
-			
-			<Anchor>//api/name/enabled</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridFilter/initWithType:</TokenIdentifier>
-			<Abstract type="html">Init an empty filter with an specific type</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>- (id)initWithType:(NSString *)type</Declaration>
+			<Declaration>- (void)setImageForState:(UIControlState)state withURL:(NSURL *)url</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>type</Name>
-					<Abstract type="html">Type of the filter</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Empty filter</Abstract></ReturnValue>
-			<Anchor>//api/name/initWithType:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createBCCFilterEnabled:withEmail:</TokenIdentifier>
-			<Abstract type="html">Sends a BCC copy of the email created in this transaction to the address specified.</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)createBCCFilterEnabled:(BOOL)enabled withEmail:(NSString *)email</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Disable or enable this App</Abstract>
-				</Parameter><Parameter>
-					<Name>email</Name>
-					<Abstract type="html">Email address destination for the bcc message</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createBCCFilterEnabled:withEmail:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createBypassFilterEnabled:</TokenIdentifier>
-			<Abstract type="html">Some emails are too important to do normal list management checks, such as password resets or critical alerts.
-Enabling this filter will bypass the normal unsubscribe / bounce / spam report checks and queue the e-mail for delivery.</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)createBypassFilterEnabled:(BOOL)enabled</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Disable or enable this App</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createBypassFilterEnabled:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createClickTrackFilterEnabled:</TokenIdentifier>
-			<Abstract type="html">Rewrites links in e-mail text and html bodies to go through our webservers, allowing for tracking when a link is clicked on.</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)createClickTrackFilterEnabled:(BOOL)enabled</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Disable or enable this App</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createClickTrackFilterEnabled:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createDkimFilterWithDomain:usingFrom:</TokenIdentifier>
-			<Abstract type="html">Allows you to specify the domain to use to sign messages with DKIM certification.
-This domain should match the domain in the From address of your e-mail.
-For more info, check out these details on DKIM ( http://sendgrid.com/docs/Apps/dkim.html ).</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)createDkimFilterWithDomain:(NSString *)domain usingFrom:(BOOL)useFrom</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>domain</Name>
-					<Abstract type="html">The domain you would like your DKIM certification signed with</Abstract>
-				</Parameter><Parameter>
-					<Name>useFrom</Name>
-					<Abstract type="html">If enabled, the domain in the From: header of the email will be used to sign your DKIM</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createDkimFilterWithDomain:usingFrom:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createDomainKeysFilterEnabled:withDomain:sendingHeader:</TokenIdentifier>
-			<Abstract type="html">Allows you to specify the domain to use to sign messages with Domain Keys.
-This domain should match the domain in the From address of your e-mail.
-For more info, check out these details on Domain Keys ( http://sendgrid.com/docs/Apps/domain_keys.html ).</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)createDomainKeysFilterEnabled:(BOOL)enabled withDomain:(NSString *)domain sendingHeader:(BOOL)header</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Disable or enable this App</Abstract>
-				</Parameter><Parameter>
-					<Name>domain</Name>
-					<Abstract type="html">The domain to sign messages as</Abstract>
-				</Parameter><Parameter>
-					<Name>header</Name>
-					<Abstract type="html">Insert a Sender header if the domain specified does not match the From address.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createDomainKeysFilterEnabled:withDomain:sendingHeader:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createFooterFilterEnabled:withHTMLText:andSimpleText:</TokenIdentifier>
-			<Abstract type="html">Inserts a footer at the bottom of the text and HTML bodies.</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)createFooterFilterEnabled:(BOOL)enabled withHTMLText:(NSString *)html andSimpleText:(NSString *)simple</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Disable or enable this App</Abstract>
-				</Parameter><Parameter>
-					<Name>html</Name>
-					<Abstract type="html">String containing html body</Abstract>
-				</Parameter><Parameter>
-					<Name>simple</Name>
-					<Abstract type="html">String containing text body</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createFooterFilterEnabled:withHTMLText:andSimpleText:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createForwardSpamFilterEnabled:toEmail:</TokenIdentifier>
-			<Abstract type="html">Allows for a copy of spam reports to be forwarded to an email address.</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)createForwardSpamFilterEnabled:(BOOL)enabled toEmail:(NSString *)email</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Disable or enable this App</Abstract>
-				</Parameter><Parameter>
-					<Name>email</Name>
-					<Abstract type="html">Email address destination for spam report to go to</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createForwardSpamFilterEnabled:toEmail:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createGAnalyticsFilterEnabled:withSource:medium:term:content:andCampaign:</TokenIdentifier>
-			<Abstract type="html">Re-writes links to integrate with Google Analytics.</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)createGAnalyticsFilterEnabled:(BOOL)enabled withSource:(NSString *)source medium:(NSString *)medium term:(NSString *)term content:(NSString *)content andCampaign:(NSString *)campaign</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Disable or enable this App</Abstract>
-				</Parameter><Parameter>
-					<Name>source</Name>
-					<Abstract type="html">Value for the utm_source field</Abstract>
-				</Parameter><Parameter>
-					<Name>medium</Name>
-					<Abstract type="html">Value for the utm_medium field</Abstract>
-				</Parameter><Parameter>
-					<Name>term</Name>
-					<Abstract type="html">Value for the utm_term field</Abstract>
-				</Parameter><Parameter>
-					<Name>content</Name>
-					<Abstract type="html">Value for the utm_content field</Abstract>
-				</Parameter><Parameter>
-					<Name>campaign</Name>
-					<Abstract type="html">Value for the utm_campaign field</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createGAnalyticsFilterEnabled:withSource:medium:term:content:andCampaign:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createGravatarFilterEnabled:</TokenIdentifier>
-			<Abstract type="html">Inserts an img tag at the bottom of the html section of an e-mail to display the gravatar associated with the mail sender.</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)createGravatarFilterEnabled:(BOOL)enabled</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Disable or enable this App</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createGravatarFilterEnabled:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createOpenTrackFitlerEnabled:</TokenIdentifier>
-			<Abstract type="html">Inserts an &lt;img&gt; tag at the bottom of the html section of an e-mail which will be used to track if an e-mail is opened.</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)createOpenTrackFitlerEnabled:(BOOL)enabled</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Disable or enable this App</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createOpenTrackFitlerEnabled:</Anchor>
-            <NodeRef refid="23"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createSpamCheckFilterEnabled:withMaxScore:andUrl:</TokenIdentifier>
-			<Abstract type="html">Tests message with SpamAssassin ( http://spamassassin.apache.org/ ) to determine if it is spam, and drop it if it is.</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
-			
-			<Declaration>+ (instancetype)createSpamCheckFilterEnabled:(BOOL)enabled withMaxScore:(CGFloat)maxScore andUrl:(NSString *)url</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Disable or enable this App</Abstract>
-				</Parameter><Parameter>
-					<Name>maxScore</Name>
-					<Abstract type="html">Score after which the message will be dropped (default is 5.0, higher scores indicate higher likelihood of spam)</Abstract>
+					<Name>state</Name>
+					<Abstract type="html">The control state.</Abstract>
 				</Parameter><Parameter>
 					<Name>url</Name>
-					<Abstract type="html">An optional url to POST the email and a copy of the report to</Abstract>
+					<Abstract type="html">The URL used for the image request.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createSpamCheckFilterEnabled:withMaxScore:andUrl:</Anchor>
+			
+			<Anchor>//api/name/setImageForState:withURL:</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createSubscriptionTrackFilterEnabled:withHTML:simpleText:andTag:</TokenIdentifier>
-			<Abstract type="html">Inserts a subscription management link at the bottom of the text and html bodies or insert the link anywhere in the email.
-If you wish to append an unsubscription link, use the text/html and text/plain paremeters.
-However, if you wish to have the link replace a tag (such as [unsubscribe]), use the replace parameter.</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIButton/setImageForState:withURL:placeholderImage:</TokenIdentifier>
+			<Abstract type="html">Asynchronously downloads an image from the specified URL, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.</Abstract>
+			<DeclaredIn>UIButton+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>+ (instancetype)createSubscriptionTrackFilterEnabled:(BOOL)enabled withHTML:(NSString *)html simpleText:(NSString *)simple andTag:(NSString *)tag</Declaration>
+			<Declaration>- (void)setImageForState:(UIControlState)state withURL:(NSURL *)url placeholderImage:(UIImage *)placeholderImage</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Disable or enable this App</Abstract>
+					<Name>state</Name>
+					<Abstract type="html">The control state.</Abstract>
 				</Parameter><Parameter>
-					<Name>html</Name>
-					<Abstract type="html">HTML to be appended to the email, with the subscription tracking link. You may control where the link is by using a tag like so: &lt;% link text %&gt;</Abstract>
+					<Name>url</Name>
+					<Abstract type="html">The URL used for the image request.</Abstract>
 				</Parameter><Parameter>
-					<Name>simple</Name>
-					<Abstract type="html">Text to be appended to the email, with the subscription tracking link. You may control where the link is by using a tag like so: &lt;% %&gt;</Abstract>
-				</Parameter><Parameter>
-					<Name>tag</Name>
-					<Abstract type="html">A tag that will be replaced with the unsubscribe URL (e.g. -unsubscribe_link-). If this parameter is included, it will override html and plain.</Abstract>
+					<Name>placeholderImage</Name>
+					<Abstract type="html">The image to be set initially, until the image request finishes. If nil, the button will not change its image until the image request finishes.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createSubscriptionTrackFilterEnabled:withHTML:simpleText:andTag:</Anchor>
+			
+			<Anchor>//api/name/setImageForState:withURL:placeholderImage:</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/SendgridFilter/createTemplateFilterEnabled:withHtml:</TokenIdentifier>
-			<Abstract type="html">Wraps a template around your email content. Useful for sending out marketing email and other nicely formatted messages.</Abstract>
-			<DeclaredIn>SendgridFilter.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIButton/setImageForState:withURLRequest:placeholderImage:success:failure:</TokenIdentifier>
+			<Abstract type="html">Asynchronously downloads an image from the specified URL request, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.</Abstract>
+			<DeclaredIn>UIButton+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>+ (instancetype)createTemplateFilterEnabled:(BOOL)enabled withHtml:(NSString *)html</Declaration>
+			<Declaration>- (void)setImageForState:(UIControlState)state withURLRequest:(NSURLRequest *)urlRequest placeholderImage:(UIImage *)placeholderImage success:(void ( ^ ) ( NSHTTPURLResponse *response , UIImage *image ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>enabled</Name>
-					<Abstract type="html">Disable or enable this App</Abstract>
+					<Name>state</Name>
+					<Abstract type="html">The control state.</Abstract>
 				</Parameter><Parameter>
-					<Name>html</Name>
-					<Abstract type="html">String containing html content for the template (must contain a &lt;% body %&gt; tag)</Abstract>
+					<Name>urlRequest</Name>
+					<Abstract type="html">The URL request used for the image request.</Abstract>
+				</Parameter><Parameter>
+					<Name>placeholderImage</Name>
+					<Abstract type="html">The image to be set initially, until the image request finishes. If nil, the button will not change its image until the image request finishes.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed when the image request operation finishes successfully. This block has no return value and takes two arguments: the server response and the image. If the image was returned from cache, the request and response parameters will be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the image request operation finishes unsuccessfully, or that finishes successfully. This block has no return value and takes a single argument: the error that occurred.</Abstract>
 				</Parameter>
 			</Parameters>
-			<ReturnValue><Abstract type="html">Formatted Filter</Abstract></ReturnValue>
-			<Anchor>//api/name/createTemplateFilterEnabled:withHtml:</Anchor>
+			
+			<Anchor>//api/name/setImageForState:withURLRequest:placeholderImage:success:failure:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIButton/setBackgroundImageForState:withURL:</TokenIdentifier>
+			<Abstract type="html">Asynchronously downloads an image from the specified URL, and sets it as the background image for the specified state once the request is finished. Any previous background image request for the receiver will be cancelled.</Abstract>
+			<DeclaredIn>UIButton+AFNetworking.h</DeclaredIn>
+			
+			<Declaration>- (void)setBackgroundImageForState:(UIControlState)state withURL:(NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The control state.</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL used for the background image request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBackgroundImageForState:withURL:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIButton/setBackgroundImageForState:withURL:placeholderImage:</TokenIdentifier>
+			<Abstract type="html">Asynchronously downloads an image from the specified URL, and sets it as the background image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.</Abstract>
+			<DeclaredIn>UIButton+AFNetworking.h</DeclaredIn>
+			
+			<Declaration>- (void)setBackgroundImageForState:(UIControlState)state withURL:(NSURL *)url placeholderImage:(UIImage *)placeholderImage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The control state.</Abstract>
+				</Parameter><Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL used for the background image request.</Abstract>
+				</Parameter><Parameter>
+					<Name>placeholderImage</Name>
+					<Abstract type="html">The background image to be set initially, until the background image request finishes. If nil, the button will not change its background image until the background image request finishes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBackgroundImageForState:withURL:placeholderImage:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIButton/setBackgroundImageForState:withURLRequest:placeholderImage:success:failure:</TokenIdentifier>
+			<Abstract type="html">Asynchronously downloads an image from the specified URL request, and sets it as the image for the specified state once the request is finished. Any previous image request for the receiver will be cancelled.</Abstract>
+			<DeclaredIn>UIButton+AFNetworking.h</DeclaredIn>
+			
+			<Declaration>- (void)setBackgroundImageForState:(UIControlState)state withURLRequest:(NSURLRequest *)urlRequest placeholderImage:(UIImage *)placeholderImage success:(void ( ^ ) ( NSHTTPURLResponse *response , UIImage *image ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>state</Name>
+					<Abstract type="html">The control state.</Abstract>
+				</Parameter><Parameter>
+					<Name>urlRequest</Name>
+					<Abstract type="html">The URL request used for the image request.</Abstract>
+				</Parameter><Parameter>
+					<Name>placeholderImage</Name>
+					<Abstract type="html">The background image to be set initially, until the background image request finishes. If nil, the button will not change its background image until the background image request finishes.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setBackgroundImageForState:withURLRequest:placeholderImage:success:failure:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIButton/cancelImageRequestOperation</TokenIdentifier>
+			<Abstract type="html">Cancels any executing image operation for the receiver, if one exists.</Abstract>
+			<DeclaredIn>UIButton+AFNetworking.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelImageRequestOperation</Declaration>
+			
+			
+			<Anchor>//api/name/cancelImageRequestOperation</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIButton/cancelBackgroundImageRequestOperation</TokenIdentifier>
+			<Abstract type="html">Cancels any executing background image operation for the receiver, if one exists.</Abstract>
+			<DeclaredIn>UIButton+AFNetworking.h</DeclaredIn>
+			
+			<Declaration>- (void)cancelBackgroundImageRequestOperation</Declaration>
+			
+			
+			<Anchor>//api/name/cancelBackgroundImageRequestOperation</Anchor>
             <NodeRef refid="23"/>
 		</Token>
 		

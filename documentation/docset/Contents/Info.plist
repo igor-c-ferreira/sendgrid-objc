@@ -5,9 +5,9 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.SendGrid.SendgridTests</string>
+	<string>com.SendGrid.Sample</string>
 	<key>CFBundleName</key>
-	<string>SendgridTests Documentation</string>
+	<string>Sample Documentation</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
@@ -18,7 +18,7 @@
 	<key>DocSetFallbackURL</key>
 	<string>http://www.sendgrid.com/SendGrid</string>
 	<key>DocSetFeedName</key>
-	<string>SendgridTests Documentation</string>
+	<string>Sample Documentation</string>
 	<key>DocSetFeedURL</key>
 	<string>http://www.sendgrid.com/SendGrid/SendGrid.atom</string>
 	<key>DocSetMinimumXcodeVersion</key>

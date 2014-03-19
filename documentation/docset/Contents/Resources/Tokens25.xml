@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SendgridSmtpOptions.html">
+	<File path="Categories/UIProgressView+AFNetworking.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SendgridSmtpOptions</TokenIdentifier>
-			<Abstract type="html">Model to retrieve the Sendgrid SMTP options</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/UIProgressView(AFNetworking)</TokenIdentifier>
+			<Abstract type="html">This category adds methods to the UIKit framework&apos;s UIProgressView class. The methods in this category provide support for binding the progress to the upload and download progress of a session task or request operation.</Abstract>
+			<DeclaredIn>UIProgressView+AFNetworking.h</DeclaredIn>
             
 			
 			<NodeRef refid="25"/>
@@ -13,292 +13,82 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/addTo:withName:</TokenIdentifier>
-			<Abstract type="html">Add a to to the options (It is used to complete the tags)</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIProgressView/setProgressWithUploadProgressOfTask:animated:</TokenIdentifier>
+			<Abstract type="html">Binds the progress to the upload progress of the specified session task.</Abstract>
+			<DeclaredIn>UIProgressView+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>- (void)addTo:(NSString *)email withName:(NSString *)name</Declaration>
+			<Declaration>- (void)setProgressWithUploadProgressOfTask:(NSURLSessionUploadTask *)task animated:(BOOL)animated</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>email</Name>
-					<Abstract type="html">Email of the to</Abstract>
+					<Name>task</Name>
+					<Abstract type="html">The session task.</Abstract>
 				</Parameter><Parameter>
-					<Name>name</Name>
-					<Abstract type="html">Name of the to (Optional)</Abstract>
+					<Name>animated</Name>
+					<Abstract type="html">YES if the change should be animated, NO if the change should happen immediately.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/addTo:withName:</Anchor>
+			<Anchor>//api/name/setProgressWithUploadProgressOfTask:animated:</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/removeTo:</TokenIdentifier>
-			<Abstract type="html">Remove a to from the options</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIProgressView/setProgressWithDownloadProgressOfTask:animated:</TokenIdentifier>
+			<Abstract type="html">Binds the progress to the download progress of the specified session task.</Abstract>
+			<DeclaredIn>UIProgressView+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>- (void)removeTo:(NSString *)email</Declaration>
+			<Declaration>- (void)setProgressWithDownloadProgressOfTask:(NSURLSessionDownloadTask *)task animated:(BOOL)animated</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>email</Name>
-					<Abstract type="html">Email that will be removed</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeTo:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/setSubstitutionValue:forKey:onEmail:</TokenIdentifier>
-			<Abstract type="html">Set a sub value for a specfic sub key</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (void)setSubstitutionValue:(NSString *)value forKey:(NSString *)key onEmail:(NSString *)email</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>value</Name>
-					<Abstract type="html">Value that will be associated to that sub</Abstract>
+					<Name>task</Name>
+					<Abstract type="html">The session task.</Abstract>
 				</Parameter><Parameter>
-					<Name>key</Name>
-					<Abstract type="html">Key of that value</Abstract>
+					<Name>animated</Name>
+					<Abstract type="html">YES if the change should be animated, NO if the change should happen immediately.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setProgressWithDownloadProgressOfTask:animated:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIProgressView/setProgressWithUploadProgressOfOperation:animated:</TokenIdentifier>
+			<Abstract type="html">Binds the progress to the upload progress of the specified request operation.</Abstract>
+			<DeclaredIn>UIProgressView+AFNetworking.h</DeclaredIn>
+			
+			<Declaration>- (void)setProgressWithUploadProgressOfOperation:(AFURLConnectionOperation *)operation animated:(BOOL)animated</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>operation</Name>
+					<Abstract type="html">The request operation.</Abstract>
 				</Parameter><Parameter>
-					<Name>email</Name>
-					<Abstract type="html">Email that the value will be associated to</Abstract>
+					<Name>animated</Name>
+					<Abstract type="html">YES if the change should be animated, NO if the change should happen immediately.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setSubstitutionValue:forKey:onEmail:</Anchor>
+			<Anchor>//api/name/setProgressWithUploadProgressOfOperation:animated:</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/getSubstitutionValueForKey:onEmail:</TokenIdentifier>
-			<Abstract type="html">Get a sub value</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIProgressView/setProgressWithDownloadProgressOfOperation:animated:</TokenIdentifier>
+			<Abstract type="html">Binds the progress to the download progress of the specified request operation.</Abstract>
+			<DeclaredIn>UIProgressView+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>- (NSString *)getSubstitutionValueForKey:(NSString *)key onEmail:(NSString *)email</Declaration>
+			<Declaration>- (void)setProgressWithDownloadProgressOfOperation:(AFURLConnectionOperation *)operation animated:(BOOL)animated</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">Key of that value</Abstract>
+					<Name>operation</Name>
+					<Abstract type="html">The request operation.</Abstract>
 				</Parameter><Parameter>
-					<Name>email</Name>
-					<Abstract type="html">Email that the value will be associated to</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The value for that key. Or nil, if the email is not in the to list</Abstract></ReturnValue>
-			<Anchor>//api/name/getSubstitutionValueForKey:onEmail:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/addSubstitutionKey:</TokenIdentifier>
-			<Abstract type="html">Add a key to the sub list. Associating an empty value for the emails in the to list</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (void)addSubstitutionKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">The key that will be generated</Abstract>
+					<Name>animated</Name>
+					<Abstract type="html">YES if the change should be animated, NO if the change should happen immediately.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/addSubstitutionKey:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/substitutionValuesForKey:</TokenIdentifier>
-			<Abstract type="html">Retrieve all the values for a specific sub key</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (NSArray *)substitutionValuesForKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">Sub key</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">All the values for that key</Abstract></ReturnValue>
-			<Anchor>//api/name/substitutionValuesForKey:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/removeSubstitutionValuesWithKey:</TokenIdentifier>
-			<Abstract type="html">Remove all the values of a specific sub key</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (void)removeSubstitutionValuesWithKey:(NSString *)key</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>key</Name>
-					<Abstract type="html">Key that will be removed</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeSubstitutionValuesWithKey:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/addSection:withValue:</TokenIdentifier>
-			<Abstract type="html">Add a section for the options</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (void)addSection:(NSString *)section withValue:(NSString *)value</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>section</Name>
-					<Abstract type="html">Section title</Abstract>
-				</Parameter><Parameter>
-					<Name>value</Name>
-					<Abstract type="html">Section value</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/addSection:withValue:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/removeSection:</TokenIdentifier>
-			<Abstract type="html">Remove a section from the options</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (void)removeSection:(NSString *)section</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>section</Name>
-					<Abstract type="html">Section that will be removed</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeSection:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/addCategory:</TokenIdentifier>
-			<Abstract type="html">Add a category for the options</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (void)addCategory:(NSString *)category</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>category</Name>
-					<Abstract type="html">Category that will be created</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/addCategory:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/removeCategory:</TokenIdentifier>
-			<Abstract type="html">Remove a category from the options</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (void)removeCategory:(NSString *)category</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>category</Name>
-					<Abstract type="html">Category that will be removed</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeCategory:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/addUniqueArg:withValue:</TokenIdentifier>
-			<Abstract type="html">Add an unique arg for the options</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (void)addUniqueArg:(NSString *)arg withValue:(NSString *)value</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>arg</Name>
-					<Abstract type="html">Argument title</Abstract>
-				</Parameter><Parameter>
-					<Name>value</Name>
-					<Abstract type="html">Argument value</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/addUniqueArg:withValue:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/removeUniqueArg:</TokenIdentifier>
-			<Abstract type="html">Remove an argument from the options</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (void)removeUniqueArg:(NSString *)arg</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>arg</Name>
-					<Abstract type="html">Title of the argument that will be removed</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeUniqueArg:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/addFilter:</TokenIdentifier>
-			<Abstract type="html">Add a filter (app) to the options</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (void)addFilter:(SendgridFilter *)filter</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>filter</Name>
-					<Abstract type="html">Filter that will be added</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/addFilter:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/filterOfType:</TokenIdentifier>
-			<Abstract type="html">Get the filter informations (or nil if the option don&apos;t have the filter of that type)</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (SendgridFilter *)filterOfType:(NSString *)type</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>type</Name>
-					<Abstract type="html">Type of the filter</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The filter information</Abstract></ReturnValue>
-			<Anchor>//api/name/filterOfType:</Anchor>
-            <NodeRef refid="25"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridSmtpOptions/removeFilterOfType:</TokenIdentifier>
-			<Abstract type="html">Remove a filter from the options</Abstract>
-			<DeclaredIn>SendgridSmtpOptions.h</DeclaredIn>
-			
-			<Declaration>- (void)removeFilterOfType:(NSString *)type</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>type</Name>
-					<Abstract type="html">Type of the filter that will be removed</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeFilterOfType:</Anchor>
+			<Anchor>//api/name/setProgressWithDownloadProgressOfOperation:animated:</Anchor>
             <NodeRef refid="25"/>
 		</Token>
 		

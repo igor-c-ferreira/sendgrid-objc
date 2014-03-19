@@ -53,13 +53,23 @@
         return;
     }
     
+	SendgridMessage* message;
+	
     if(self.useSMTP)
-        [self sendSmtpEmail];
+        message = [self sendSmtpEmail];
     else
-        [self sendSimpleEmail];
+        message = [self sendSimpleEmail];
+	
+	[[Sendgrid sharedInstance] sendMessage:message withSuccess:^(NSString *message) {
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Success" message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alert show];
+    } andError:^(NSString *message, NSArray *errors) {
+        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error" message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [alert show];
+    }];
 }
 
--(void)sendSimpleEmail
+-(SendgridMessage*)sendSimpleEmail
 {
     // 1 - Create the message
     SendgridMessage* message = [[Sendgrid sharedInstance] createNewMessage];
@@ -75,10 +85,10 @@
     [message setHtmlBody:self.message.text];        //HTML format
     [message setSimpleTextBody:self.message.text];  //Simple text format
     
-    [self sendMessage:message];
+    return message;
 }
 
--(void)sendSmtpEmail
+-(SendgridMessage*)sendSmtpEmail
 {
     //The Sendgrid API have a method to split the "name <email@host.com>" input format
     NSArray* toComponents = [Sendgrid filterEmailAndNameFromField:self.to.text];
@@ -142,18 +152,44 @@
     simpleMessage = [simpleMessage stringByAppendingString:self.message.text];
     [message setSimpleTextBody:simpleMessage];
     
-    [self sendMessage:message];
+    return message;
 }
 
--(void)sendMessage:(SendgridMessage*)message
+- (IBAction)closeKeyboard:(id)sender
 {
-    [[Sendgrid sharedInstance] sendMessage:message withSuccess:^(NSString *message) {
-        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Success" message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-        [alert show];
-    } andError:^(NSString *message, NSArray *errors) {
-        UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error" message:message delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
-        [alert show];
-    }];
+	[self.from resignFirstResponder];
+	[self.to resignFirstResponder];
+	[self.message resignFirstResponder];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+	[textField resignFirstResponder];
+	if(textField == self.from)
+		[self.to becomeFirstResponder];
+	else if(textField == self.to)
+		[self.message becomeFirstResponder];
+	return YES;
+}
+
+-(BOOL)textViewShouldBeginEditing:(UITextView *)textView
+{
+	CGRect frame = [self.view frame];
+	frame.origin.y = -80;
+	[UIView animateWithDuration:0.3f animations:^{
+		[self.view setFrame:frame];
+	}];
+	return YES;
+}
+
+-(BOOL)textViewShouldEndEditing:(UITextView *)textView
+{
+	CGRect frame = [self.view frame];
+	frame.origin.y = 0;
+	[UIView animateWithDuration:0.3f animations:^{
+		[self.view setFrame:frame];
+	}];
+	return YES;
 }
 
 @end

@@ -18,6 +18,15 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nPh-UJ-msu">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="P3x-bI-zvk" appends="YES" id="6p6-sE-YXL"/>
+                    </connections>
+                </view>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9C-hb-acU">
                     <rect key="frame" x="20" y="20" width="51" height="21"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -35,7 +44,10 @@
                         <constraint firstAttribute="height" constant="30" id="P8b-yF-O3k"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="jc0-uN-9Vq"/>
+                    </connections>
                 </textField>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zm0-dF-W48">
                     <rect key="frame" x="20" y="87" width="28" height="21"/>
@@ -54,7 +66,10 @@
                         <constraint firstAttribute="height" constant="30" id="gGw-Ex-tyY"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="7bC-bH-AYe"/>
+                    </connections>
                 </textField>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hd-jg-5yK">
                     <rect key="frame" x="20" y="154" width="140" height="21"/>
@@ -72,15 +87,21 @@
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="4XE-yb-0mN"/>
+                    </connections>
                 </textView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="Zm0-dF-W48" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="0GP-DH-dmp"/>
                 <constraint firstAttribute="trailing" secondItem="yga-Db-rbV" secondAttribute="trailing" constant="20" id="0cn-eW-JfJ"/>
+                <constraint firstAttribute="trailing" secondItem="nPh-UJ-msu" secondAttribute="trailing" id="0of-FI-S1s"/>
                 <constraint firstAttribute="trailing" secondItem="ulB-eU-Rmn" secondAttribute="trailing" constant="20" id="6Dd-NR-zuj"/>
+                <constraint firstItem="nPh-UJ-msu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="6w2-yu-XZy"/>
                 <constraint firstItem="ulB-eU-Rmn" firstAttribute="top" secondItem="Zm0-dF-W48" secondAttribute="bottom" constant="8" id="Ayg-Di-0u6"/>
                 <constraint firstItem="q9C-hb-acU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Ekc-K5-2Wc"/>
+                <constraint firstAttribute="bottom" secondItem="nPh-UJ-msu" secondAttribute="bottom" id="HD1-JH-aur"/>
                 <constraint firstItem="Zm0-dF-W48" firstAttribute="top" secondItem="yga-Db-rbV" secondAttribute="bottom" constant="8" id="MAZ-Jy-vo6"/>
                 <constraint firstItem="f1e-FG-m84" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="SfF-7A-SMb"/>
                 <constraint firstItem="2hd-jg-5yK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="VjQ-ks-Bfy"/>
@@ -90,11 +111,17 @@
                 <constraint firstItem="f1e-FG-m84" firstAttribute="top" secondItem="2hd-jg-5yK" secondAttribute="bottom" constant="8" id="agO-Wh-zSf"/>
                 <constraint firstItem="q9C-hb-acU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="bAa-xw-ILZ"/>
                 <constraint firstAttribute="bottom" secondItem="f1e-FG-m84" secondAttribute="bottom" constant="20" id="dhE-W9-eji"/>
+                <constraint firstItem="nPh-UJ-msu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="i5v-gd-aOO"/>
                 <constraint firstAttribute="trailing" secondItem="f1e-FG-m84" secondAttribute="trailing" constant="20" id="idG-lk-AyY"/>
                 <constraint firstItem="ulB-eU-Rmn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="lAB-VI-hXJ"/>
             </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
+        <tapGestureRecognizer cancelsTouchesInView="NO" id="P3x-bI-zvk">
+            <connections>
+                <action selector="closeKeyboard:" destination="-1" id="TFF-cY-v6A"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
 </document>

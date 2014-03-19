@@ -157,12 +157,23 @@
 		
 		<Token>
 			<TokenIdentifier>//apple_ref/occ/instm/AFHTTPResponseSerializer/responseObjectForResponse:data:error:</TokenIdentifier>
-			<Abstract type="html"></Abstract>
+			<Abstract type="html">The response object decoded from the data associated with a specified response.</Abstract>
 			<DeclaredIn>AFURLResponseSerialization.m</DeclaredIn>
 			
 			<Declaration>- (id)responseObjectForResponse:(NSURLResponse *)response data:(NSData *)data error:(NSError *__autoreleasing *)error</Declaration>
-			
-			
+			<Parameters>
+				<Parameter>
+					<Name>response</Name>
+					<Abstract type="html">The response to be processed.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The response data to be decoded.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error that occurred while attempting to decode the response data.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The object decoded from the specified response data.</Abstract></ReturnValue>
 			<Anchor>//api/name/responseObjectForResponse:data:error:</Anchor>
             <NodeRef refid="5"/>
 		</Token>

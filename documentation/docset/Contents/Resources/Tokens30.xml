@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIProgressView+AFNetworking.html">
+	<File path="Protocols/AFURLRequestSerialization.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIProgressView(AFNetworking)</TokenIdentifier>
-			<Abstract type="html">This category adds methods to the UIKit framework&apos;s UIProgressView class. The methods in this category provide support for binding the progress to the upload and download progress of a session task or request operation.</Abstract>
-			<DeclaredIn>UIProgressView+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/AFURLRequestSerialization</TokenIdentifier>
+			<Abstract type="html">The AFURLRequestSerialization protocol is adopted by an object that encodes parameters for a specified HTTP requests. Request serializers may encode parameters as query strings, HTTP bodies, setting the appropriate HTTP header fields as necessary.</Abstract>
+			<DeclaredIn>AFURLRequestSerialization.h</DeclaredIn>
             
 			
 			<NodeRef refid="30"/>
@@ -13,82 +13,25 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIProgressView/setProgressWithUploadProgressOfTask:animated:</TokenIdentifier>
-			<Abstract type="html">Binds the progress to the upload progress of the specified session task.</Abstract>
-			<DeclaredIn>UIProgressView+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFURLRequestSerialization/requestBySerializingRequest:withParameters:error:</TokenIdentifier>
+			<Abstract type="html">Returns a request with the specified parameters encoded into a copy of the original request.</Abstract>
+			<DeclaredIn>AFURLRequestSerialization.h</DeclaredIn>
 			
-			<Declaration>- (void)setProgressWithUploadProgressOfTask:(NSURLSessionUploadTask *)task animated:(BOOL)animated</Declaration>
+			<Declaration>- (NSURLRequest *)requestBySerializingRequest:(NSURLRequest *)request withParameters:(id)parameters error:(NSError *__autoreleasing *)error</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>task</Name>
-					<Abstract type="html">The session task.</Abstract>
+					<Name>request</Name>
+					<Abstract type="html">The original request.</Abstract>
 				</Parameter><Parameter>
-					<Name>animated</Name>
-					<Abstract type="html">YES if the change should be animated, NO if the change should happen immediately.</Abstract>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error that occurred while attempting to encode the request parameters.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/setProgressWithUploadProgressOfTask:animated:</Anchor>
-            <NodeRef refid="30"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIProgressView/setProgressWithDownloadProgressOfTask:animated:</TokenIdentifier>
-			<Abstract type="html">Binds the progress to the download progress of the specified session task.</Abstract>
-			<DeclaredIn>UIProgressView+AFNetworking.h</DeclaredIn>
-			
-			<Declaration>- (void)setProgressWithDownloadProgressOfTask:(NSURLSessionDownloadTask *)task animated:(BOOL)animated</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>task</Name>
-					<Abstract type="html">The session task.</Abstract>
-				</Parameter><Parameter>
-					<Name>animated</Name>
-					<Abstract type="html">YES if the change should be animated, NO if the change should happen immediately.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setProgressWithDownloadProgressOfTask:animated:</Anchor>
-            <NodeRef refid="30"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIProgressView/setProgressWithUploadProgressOfOperation:animated:</TokenIdentifier>
-			<Abstract type="html">Binds the progress to the upload progress of the specified request operation.</Abstract>
-			<DeclaredIn>UIProgressView+AFNetworking.h</DeclaredIn>
-			
-			<Declaration>- (void)setProgressWithUploadProgressOfOperation:(AFURLConnectionOperation *)operation animated:(BOOL)animated</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>operation</Name>
-					<Abstract type="html">The request operation.</Abstract>
-				</Parameter><Parameter>
-					<Name>animated</Name>
-					<Abstract type="html">YES if the change should be animated, NO if the change should happen immediately.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setProgressWithUploadProgressOfOperation:animated:</Anchor>
-            <NodeRef refid="30"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIProgressView/setProgressWithDownloadProgressOfOperation:animated:</TokenIdentifier>
-			<Abstract type="html">Binds the progress to the download progress of the specified request operation.</Abstract>
-			<DeclaredIn>UIProgressView+AFNetworking.h</DeclaredIn>
-			
-			<Declaration>- (void)setProgressWithDownloadProgressOfOperation:(AFURLConnectionOperation *)operation animated:(BOOL)animated</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>operation</Name>
-					<Abstract type="html">The request operation.</Abstract>
-				</Parameter><Parameter>
-					<Name>animated</Name>
-					<Abstract type="html">YES if the change should be animated, NO if the change should happen immediately.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setProgressWithDownloadProgressOfOperation:animated:</Anchor>
+			<ReturnValue><Abstract type="html">A serialized request.</Abstract></ReturnValue>
+			<Anchor>//api/name/requestBySerializingRequest:withParameters:error:</Anchor>
             <NodeRef refid="30"/>
 		</Token>
 		

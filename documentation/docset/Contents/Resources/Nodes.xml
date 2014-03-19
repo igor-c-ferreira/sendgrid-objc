@@ -2,7 +2,7 @@
 <DocSetNodes version="1.0">
     <TOC>
         <Node type="folder">
-            <Name>SendgridTests</Name>
+            <Name>Sample</Name>
             <Path>index.html</Path>
 			<Subnodes>
                 
@@ -31,11 +31,6 @@
 						<NodeRef refid="18"/>
 						<NodeRef refid="19"/>
 						<NodeRef refid="20"/>
-						<NodeRef refid="21"/>
-						<NodeRef refid="22"/>
-						<NodeRef refid="23"/>
-						<NodeRef refid="24"/>
-						<NodeRef refid="25"/>
 						
 					</Subnodes>
 				</Node>
@@ -45,13 +40,13 @@
 					<Name>Categories</Name>
 					<Path>index.html</Path>
 					<Subnodes>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
 						<NodeRef refid="26"/>
 						<NodeRef refid="27"/>
-						<NodeRef refid="28"/>
-						<NodeRef refid="29"/>
-						<NodeRef refid="30"/>
-						<NodeRef refid="31"/>
-						<NodeRef refid="32"/>
 						
 					</Subnodes>
 				</Node>
@@ -61,10 +56,10 @@
 					<Name>Protocols</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="33"/>
-						<NodeRef refid="34"/>
-						<NodeRef refid="35"/>
-						<NodeRef refid="36"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
 						
 					</Subnodes>
 				</Node>
@@ -74,11 +69,11 @@
 					<Name>Constants</Name>
 					<Path>index.html</Path>
 					<Subnodes>
-						<NodeRef refid="37"/>
-						<NodeRef refid="38"/>
-						<NodeRef refid="39"/>
-						<NodeRef refid="40"/>
-						<NodeRef refid="41"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
 						
 					</Subnodes>
 				</Node>
@@ -361,12 +356,6 @@
                 
                 
                 
-                <Node type="section">
-                    <Path>Classes/AFImageResponseSerializer.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
             </Subnodes>
             
         </Node>
@@ -399,12 +388,6 @@
                     <Anchor>class_methods</Anchor>
                 </Node>
                 
-                
-                <Node type="section">
-                    <Path>Classes/AFJSONRequestSerializer.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
                 
             </Subnodes>
             
@@ -583,12 +566,6 @@
                 </Node>
                 
                 
-                <Node type="section">
-                    <Path>Classes/AFPropertyListResponseSerializer.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
             </Subnodes>
             
         </Node>
@@ -760,12 +737,6 @@
                 </Node>
                 
                 
-                <Node type="section">
-                    <Path>Classes/AFXMLDocumentResponseSerializer.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
             </Subnodes>
             
         </Node>
@@ -796,173 +767,8 @@
             </Subnodes>
             
         </Node>
-		<Node id="21" type="file" documentType="reference">
-            <Name>Sendgrid</Name>
-            <Path>Classes/Sendgrid.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/Sendgrid.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/Sendgrid.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/Sendgrid.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/Sendgrid.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="22" type="file" documentType="reference">
-            <Name>SendgridAttachment</Name>
-            <Path>Classes/SendgridAttachment.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/SendgridAttachment.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/SendgridAttachment.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                <Node type="section">
-                    <Path>Classes/SendgridAttachment.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
-                </Node>
-                
-                
-                
-                <Node type="section">
-                    <Path>Classes/SendgridAttachment.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="23" type="file" documentType="reference">
-            <Name>SendgridFilter</Name>
-            <Path>Classes/SendgridFilter.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/SendgridFilter.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/SendgridFilter.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                <Node type="section">
-                    <Path>Classes/SendgridFilter.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/SendgridFilter.html</Path>
-                    <Name>Class Methods</Name>
-                    <Anchor>class_methods</Anchor>
-                </Node>
-                
-                
-                <Node type="section">
-                    <Path>Classes/SendgridFilter.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="24" type="file" documentType="reference">
-            <Name>SendgridMessage</Name>
-            <Path>Classes/SendgridMessage.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/SendgridMessage.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/SendgridMessage.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                <Node type="section">
-                    <Path>Classes/SendgridMessage.html</Path>
-                    <Name>Properties</Name>
-                    <Anchor>properties</Anchor>
-                </Node>
-                
-                
-                
-                <Node type="section">
-                    <Path>Classes/SendgridMessage.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
-		<Node id="25" type="file" documentType="reference">
-            <Name>SendgridSmtpOptions</Name>
-            <Path>Classes/SendgridSmtpOptions.html</Path>
-            
-                <Subnodes>
-                <Node type="section">
-                    <Path>Classes/SendgridSmtpOptions.html</Path>
-                    <Name>Overview</Name>
-                    <Anchor>overview</Anchor>
-                </Node>
-                <Node type="section">
-                    <Path>Classes/SendgridSmtpOptions.html</Path>
-                    <Name>Tasks</Name>
-                    <Anchor>tasks</Anchor>
-                </Node>
-                
-                
-                
-                <Node type="section">
-                    <Path>Classes/SendgridSmtpOptions.html</Path>
-                    <Name>Instance Methods</Name>
-                    <Anchor>instance_methods</Anchor>
-                </Node>
-                
-            </Subnodes>
-            
-        </Node>
 		
-		<Node id="26" type="file" documentType="reference">
+		<Node id="21" type="file" documentType="reference">
             <Name>UIActivityIndicatorView(AFNetworking)</Name>
             <Path>Categories/UIActivityIndicatorView+AFNetworking.html</Path>
             
@@ -989,7 +795,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="27" type="file" documentType="reference">
+		<Node id="22" type="file" documentType="reference">
             <Name>UIAlertView(AFNetworking)</Name>
             <Path>Categories/UIAlertView+AFNetworking.html</Path>
             
@@ -1016,7 +822,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="28" type="file" documentType="reference">
+		<Node id="23" type="file" documentType="reference">
             <Name>UIButton(AFNetworking)</Name>
             <Path>Categories/UIButton+AFNetworking.html</Path>
             
@@ -1043,7 +849,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="29" type="file" documentType="reference">
+		<Node id="24" type="file" documentType="reference">
             <Name>UIImageView(AFNetworking)</Name>
             <Path>Categories/UIImageView+AFNetworking.html</Path>
             
@@ -1082,7 +888,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="30" type="file" documentType="reference">
+		<Node id="25" type="file" documentType="reference">
             <Name>UIProgressView(AFNetworking)</Name>
             <Path>Categories/UIProgressView+AFNetworking.html</Path>
             
@@ -1109,7 +915,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="31" type="file" documentType="reference">
+		<Node id="26" type="file" documentType="reference">
             <Name>UIRefreshControl(AFNetworking)</Name>
             <Path>Categories/UIRefreshControl+AFNetworking.html</Path>
             
@@ -1136,7 +942,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="32" type="file" documentType="reference">
+		<Node id="27" type="file" documentType="reference">
             <Name>UIWebView(AFNetworking)</Name>
             <Path>Categories/UIWebView+AFNetworking.html</Path>
             
@@ -1170,7 +976,7 @@
             
         </Node>
 		
-        <Node id="33" type="file" documentType="reference">
+        <Node id="28" type="file" documentType="reference">
             <Name>AFImageCache</Name>
             <Path>Protocols/AFImageCache.html</Path>
             
@@ -1197,7 +1003,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="34" type="file" documentType="reference">
+		<Node id="29" type="file" documentType="reference">
             <Name>AFMultipartFormData</Name>
             <Path>Protocols/AFMultipartFormData.html</Path>
             
@@ -1224,7 +1030,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="35" type="file" documentType="reference">
+		<Node id="30" type="file" documentType="reference">
             <Name>AFURLRequestSerialization</Name>
             <Path>Protocols/AFURLRequestSerialization.html</Path>
             
@@ -1251,7 +1057,7 @@
             </Subnodes>
             
         </Node>
-		<Node id="36" type="file" documentType="reference">
+		<Node id="31" type="file" documentType="reference">
             <Name>AFURLResponseSerialization</Name>
             <Path>Protocols/AFURLResponseSerialization.html</Path>
             
@@ -1279,27 +1085,27 @@
             
         </Node>
 		
-        <Node id="37" type="file" documentType="reference">
+        <Node id="32" type="file" documentType="reference">
             <Name>AFHTTPRequestQueryStringSerializationStyle</Name>
             <Path>Constants/AFHTTPRequestQueryStringSerializationStyle.html</Path>
             
         </Node>
-		<Node id="38" type="file" documentType="reference">
+		<Node id="33" type="file" documentType="reference">
             <Name>AFNetworkReachabilityAssociation</Name>
             <Path>Constants/AFNetworkReachabilityAssociation.html</Path>
             
         </Node>
-		<Node id="39" type="file" documentType="reference">
+		<Node id="34" type="file" documentType="reference">
             <Name>AFNetworkReachabilityStatus</Name>
             <Path>Constants/AFNetworkReachabilityStatus.html</Path>
             
         </Node>
-		<Node id="40" type="file" documentType="reference">
+		<Node id="35" type="file" documentType="reference">
             <Name>AFOperationState</Name>
             <Path>Constants/AFOperationState.html</Path>
             
         </Node>
-		<Node id="41" type="file" documentType="reference">
+		<Node id="36" type="file" documentType="reference">
             <Name>AFSSLPinningMode</Name>
             <Path>Constants/AFSSLPinningMode.html</Path>
             

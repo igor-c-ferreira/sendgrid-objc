@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/SendgridMessage.html">
+	<File path="Categories/UIImageView+AFNetworking.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/SendgridMessage</TokenIdentifier>
-			<Abstract type="html">Model to retreive the message content</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/UIImageView(AFNetworking)</TokenIdentifier>
+			<Abstract type="html">This category adds methods to the UIKit framework&apos;s UIImageView class. The methods in this category provide support for loading remote images asynchronously from a URL.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
             
 			
 			<NodeRef refid="24"/>
@@ -13,548 +13,142 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setFromEmail:</TokenIdentifier>
-			<Abstract type="html">The email associated to the from</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImageView/sharedImageCache</TokenIdentifier>
+			<Abstract type="html">The image cache used to improve image loadiing performance on scroll views. By default, this is an NSCache subclass conforming to the AFImageCache protocol, which listens for notification warnings and evicts objects accordingly.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>@property (nonatomic, readonly) NSString *fromEmail</Declaration>
+			<Declaration>+ (id&lt;AFImageCache&gt;)sharedImageCache</Declaration>
 			
 			
-			<Anchor>//api/name/fromEmail</Anchor>
+			<Anchor>//api/name/sharedImageCache</Anchor>
             <NodeRef refid="24"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/fromEmail</TokenIdentifier>
-			<Abstract type="html">The email associated to the from</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *fromEmail</Declaration>
-			
-			
-			<Anchor>//api/name/fromEmail</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridMessage/fromEmail</TokenIdentifier>
-			<Abstract type="html">The email associated to the from</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *fromEmail</Declaration>
-			
-			
-			<Anchor>//api/name/fromEmail</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setFromName:</TokenIdentifier>
-			<Abstract type="html">The name associated to the name</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *fromName</Declaration>
-			
-			
-			<Anchor>//api/name/fromName</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/fromName</TokenIdentifier>
-			<Abstract type="html">The name associated to the name</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *fromName</Declaration>
-			
-			
-			<Anchor>//api/name/fromName</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridMessage/fromName</TokenIdentifier>
-			<Abstract type="html">The name associated to the name</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *fromName</Declaration>
-			
-			
-			<Anchor>//api/name/fromName</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setEmailToReplay:</TokenIdentifier>
-			<Abstract type="html">The email that will receive the response for the emails</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *emailToReplay</Declaration>
-			
-			
-			<Anchor>//api/name/emailToReplay</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/emailToReplay</TokenIdentifier>
-			<Abstract type="html">The email that will receive the response for the emails</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *emailToReplay</Declaration>
-			
-			
-			<Anchor>//api/name/emailToReplay</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridMessage/emailToReplay</TokenIdentifier>
-			<Abstract type="html">The email that will receive the response for the emails</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSString *emailToReplay</Declaration>
-			
-			
-			<Anchor>//api/name/emailToReplay</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setToList:</TokenIdentifier>
-			<Abstract type="html">Array list of the to of the message.
-</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong, readonly) NSArray *toList</Declaration>
-			
-			
-			<Anchor>//api/name/toList</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/toList</TokenIdentifier>
-			<Abstract type="html">Array list of the to of the message.
-</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong, readonly) NSArray *toList</Declaration>
-			
-			
-			<Anchor>//api/name/toList</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridMessage/toList</TokenIdentifier>
-			<Abstract type="html">Array list of the to of the message.
-</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong, readonly) NSArray *toList</Declaration>
-			
-			
-			<Anchor>//api/name/toList</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setSubject:</TokenIdentifier>
-			<Abstract type="html">Subject of the email</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *subject</Declaration>
-			
-			
-			<Anchor>//api/name/subject</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/subject</TokenIdentifier>
-			<Abstract type="html">Subject of the email</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *subject</Declaration>
-			
-			
-			<Anchor>//api/name/subject</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridMessage/subject</TokenIdentifier>
-			<Abstract type="html">Subject of the email</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *subject</Declaration>
-			
-			
-			<Anchor>//api/name/subject</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setHtmlBody:</TokenIdentifier>
-			<Abstract type="html">The html text that will be sent as the message</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *htmlBody</Declaration>
-			
-			
-			<Anchor>//api/name/htmlBody</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/htmlBody</TokenIdentifier>
-			<Abstract type="html">The html text that will be sent as the message</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *htmlBody</Declaration>
-			
-			
-			<Anchor>//api/name/htmlBody</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridMessage/htmlBody</TokenIdentifier>
-			<Abstract type="html">The html text that will be sent as the message</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *htmlBody</Declaration>
-			
-			
-			<Anchor>//api/name/htmlBody</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setSimpleTextBody:</TokenIdentifier>
-			<Abstract type="html">The simple text that will be sent as the message</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *simpleTextBody</Declaration>
-			
-			
-			<Anchor>//api/name/simpleTextBody</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/simpleTextBody</TokenIdentifier>
-			<Abstract type="html">The simple text that will be sent as the message</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *simpleTextBody</Declaration>
-			
-			
-			<Anchor>//api/name/simpleTextBody</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridMessage/simpleTextBody</TokenIdentifier>
-			<Abstract type="html">The simple text that will be sent as the message</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) NSString *simpleTextBody</Declaration>
-			
-			
-			<Anchor>//api/name/simpleTextBody</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setSmtpApiOptions:</TokenIdentifier>
-			<Abstract type="html">Holder of the x-smtapi content</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) SendgridSmtpOptions *smtpApiOptions</Declaration>
-			
-			
-			<Anchor>//api/name/smtpApiOptions</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/smtpApiOptions</TokenIdentifier>
-			<Abstract type="html">Holder of the x-smtapi content</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) SendgridSmtpOptions *smtpApiOptions</Declaration>
-			
-			
-			<Anchor>//api/name/smtpApiOptions</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridMessage/smtpApiOptions</TokenIdentifier>
-			<Abstract type="html">Holder of the x-smtapi content</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, strong) SendgridSmtpOptions *smtpApiOptions</Declaration>
-			
-			
-			<Anchor>//api/name/smtpApiOptions</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setAttachments:</TokenIdentifier>
-			<Abstract type="html">Holder of the attached files</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *attachments</Declaration>
-			
-			
-			<Anchor>//api/name/attachments</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/attachments</TokenIdentifier>
-			<Abstract type="html">Holder of the attached files</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *attachments</Declaration>
-			
-			
-			<Anchor>//api/name/attachments</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridMessage/attachments</TokenIdentifier>
-			<Abstract type="html">Holder of the attached files</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSArray *attachments</Declaration>
-			
-			
-			<Anchor>//api/name/attachments</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setHeaders:</TokenIdentifier>
-			<Abstract type="html">Holder of the header values</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *headers</Declaration>
-			
-			
-			<Anchor>//api/name/headers</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/headers</TokenIdentifier>
-			<Abstract type="html">Holder of the header values</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *headers</Declaration>
-			
-			
-			<Anchor>//api/name/headers</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instp/SendgridMessage/headers</TokenIdentifier>
-			<Abstract type="html">Holder of the header values</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>@property (nonatomic, readonly) NSDictionary *headers</Declaration>
-			
-			
-			<Anchor>//api/name/headers</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setFrom:</TokenIdentifier>
-			<Abstract type="html">Set the email that will associated as the source of the email</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>- (void)setFrom:(NSString *)from</Declaration>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImageView/setSharedImageCache:</TokenIdentifier>
+			<Abstract type="html">Set the cache used for image loading.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
+			
+			<Declaration>+ (void)setSharedImageCache:(id&lt;AFImageCache&gt;)imageCache</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>from</Name>
-					<Abstract type="html">The source email</Abstract>
+					<Name>imageCache</Name>
+					<Abstract type="html">The image cache.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setFrom:</Anchor>
+			<Anchor>//api/name/setSharedImageCache:</Anchor>
             <NodeRef refid="24"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setFrom:withName:</TokenIdentifier>
-			<Abstract type="html">Set the email that will associated as the source of the email with a source name</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImageView/setImageResponseSerializer:</TokenIdentifier>
+			<Abstract type="html">The response serializer used to create an image representation from the server response and response data. By default, this is an instance of AFImageResponseSerializer.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>- (void)setFrom:(NSString *)from withName:(NSString *)name</Declaration>
+			<Declaration>@property (nonatomic, strong) AFImageResponseSerializer&lt;AFURLResponseSerialization&gt; *imageResponseSerializer</Declaration>
+			
+			
+			<Anchor>//api/name/imageResponseSerializer</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImageView/imageResponseSerializer</TokenIdentifier>
+			<Abstract type="html">The response serializer used to create an image representation from the server response and response data. By default, this is an instance of AFImageResponseSerializer.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AFImageResponseSerializer&lt;AFURLResponseSerialization&gt; *imageResponseSerializer</Declaration>
+			
+			
+			<Anchor>//api/name/imageResponseSerializer</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/UIImageView/imageResponseSerializer</TokenIdentifier>
+			<Abstract type="html">The response serializer used to create an image representation from the server response and response data. By default, this is an instance of AFImageResponseSerializer.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AFImageResponseSerializer&lt;AFURLResponseSerialization&gt; *imageResponseSerializer</Declaration>
+			
+			
+			<Anchor>//api/name/imageResponseSerializer</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImageView/setImageWithURL:</TokenIdentifier>
+			<Abstract type="html">Asynchronously downloads an image from the specified URL, and sets it once the request is finished. Any previous image request for the receiver will be cancelled.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
+			
+			<Declaration>- (void)setImageWithURL:(NSURL *)url</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>from</Name>
-					<Abstract type="html">The source email</Abstract>
+					<Name>url</Name>
+					<Abstract type="html">The URL used for the image request.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setImageWithURL:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImageView/setImageWithURL:placeholderImage:</TokenIdentifier>
+			<Abstract type="html">Asynchronously downloads an image from the specified URL, and sets it once the request is finished. Any previous image request for the receiver will be cancelled.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
+			
+			<Declaration>- (void)setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholderImage</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The URL used for the image request.</Abstract>
 				</Parameter><Parameter>
-					<Name>name</Name>
-					<Abstract type="html">Source name</Abstract>
+					<Name>placeholderImage</Name>
+					<Abstract type="html">The image to be set initially, until the image request finishes. If nil, the image view will not change its image until the image request finishes.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setFrom:withName:</Anchor>
+			<Anchor>//api/name/setImageWithURL:placeholderImage:</Anchor>
             <NodeRef refid="24"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/setReplyTo:</TokenIdentifier>
-			<Abstract type="html">Set the email that will receive an answer</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImageView/setImageWithURLRequest:placeholderImage:success:failure:</TokenIdentifier>
+			<Abstract type="html">Asynchronously downloads an image from the specified URL request, and sets it once the request is finished. Any previous image request for the receiver will be cancelled.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>- (void)setReplyTo:(NSString *)reply</Declaration>
+			<Declaration>- (void)setImageWithURLRequest:(NSURLRequest *)urlRequest placeholderImage:(UIImage *)placeholderImage success:(void ( ^ ) ( NSURLRequest *request , NSHTTPURLResponse *response , UIImage *image ))success failure:(void ( ^ ) ( NSURLRequest *request , NSHTTPURLResponse *response , NSError *error ))failure</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>reply</Name>
-					<Abstract type="html">Email to be replyed to</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setReplyTo:</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/addTo:</TokenIdentifier>
-			<Abstract type="html">Add a destination email</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>- (void)addTo:(NSString *)email</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>email</Name>
-					<Abstract type="html">To destination email</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/addTo:</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/addTo:withName:</TokenIdentifier>
-			<Abstract type="html">Add a destination email with an name associated to it</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>- (void)addTo:(NSString *)email withName:(NSString *)name</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>email</Name>
-					<Abstract type="html">To destination email</Abstract>
+					<Name>urlRequest</Name>
+					<Abstract type="html">The URL request used for the image request.</Abstract>
 				</Parameter><Parameter>
-					<Name>name</Name>
-					<Abstract type="html">Name that will be associated to that email</Abstract>
+					<Name>placeholderImage</Name>
+					<Abstract type="html">The image to be set initially, until the image request finishes. If nil, the image view will not change its image until the image request finishes.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block to be executed when the image request operation finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the image created from the response data of request. If the image was returned from cache, the request and response parameters will be nil.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the image request operation finishes unsuccessfully, or that finishes successfully. This block has no return value and takes three arguments: the request sent from the client, the response received from the server, and the error object describing the network or parsing error that occurred.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/addTo:withName:</Anchor>
+			<Anchor>//api/name/setImageWithURLRequest:placeholderImage:success:failure:</Anchor>
             <NodeRef refid="24"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/addAttachment:</TokenIdentifier>
-			<Abstract type="html">Add an attachment to the message</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIImageView/cancelImageRequestOperation</TokenIdentifier>
+			<Abstract type="html">Cancels any executing image operation for the receiver, if one exists.</Abstract>
+			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>- (void)addAttachment:(SendgridAttachment *)attachment</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>attachment</Name>
-					<Abstract type="html">Attachment</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/addAttachment:</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/removeAttachmentWithToken:</TokenIdentifier>
-			<Abstract type="html">Remove an specific attachment by the registered token</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>- (SendgridAttachment *)removeAttachmentWithToken:(NSString *)token</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>token</Name>
-					<Abstract type="html">Token that will be used to search for the attachment</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/removeAttachmentWithToken:</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/updateAttachment:</TokenIdentifier>
-			<Abstract type="html">Update the content of an Attachment</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>- (void)updateAttachment:(SendgridAttachment *)attachment</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>attachment</Name>
-					<Abstract type="html">The new informations</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/updateAttachment:</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/inlineAttachments</TokenIdentifier>
-			<Abstract type="html">Method to retrieve all the inline attachments of the message</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>- (NSArray *)inlineAttachments</Declaration>
+			<Declaration>- (void)cancelImageRequestOperation</Declaration>
 			
 			
-			<Anchor>//api/name/inlineAttachments</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/initWithJson:</TokenIdentifier>
-			<Abstract type="html">Init the model with a content json string</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>- (id)initWithJson:(NSString *)json</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>json</Name>
-					<Abstract type="html">The formatted json string</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/initWithJson:</Anchor>
-            <NodeRef refid="24"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/SendgridMessage/toJson</TokenIdentifier>
-			<Abstract type="html">Convert the model to a json string</Abstract>
-			<DeclaredIn>SendgridMessage.h</DeclaredIn>
-			
-			<Declaration>- (NSString *)toJson</Declaration>
-			
-			
-			<Anchor>//api/name/toJson</Anchor>
+			<Anchor>//api/name/cancelImageRequestOperation</Anchor>
             <NodeRef refid="24"/>
 		</Token>
 		

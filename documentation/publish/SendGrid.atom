@@ -1,19 +1,19 @@
 <?xml version="1.0" standalone="no"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:docset="http://developer.apple.com/rss/docset_extensions" xml:lang="en">
-    <id>http://www.sendgrid.com/SendGrid/SendGrid.atom/20140318195538</id>
-    <title type="text">SendgridTests Documentation</title>
+    <id>http://www.sendgrid.com/SendGrid/SendGrid.atom/20140319122434</id>
+    <title type="text">Sample Documentation</title>
     <rights>Copyright © 2014 SendGrid. All rights reserved.</rights>
     <link rel="self" href="http://www.sendgrid.com/SendGrid/SendGrid.atom"></link>
     <docset:publisherName>SendGrid</docset:publisherName>
     <docset:publisherID>com.SendGrid.documentation</docset:publisherID>
-    <updated>2014-03-18T19:55:38-03:00</updated>
+    <updated>2014-03-19T12:24:34-03:00</updated>
     <entry>
-        <id>tag:www.sendgrid.com,2014-03-18:com.SendGrid.SendgridTests/1.0.0</id>
-        <title type="text">SendgridTests Documentation</title>
-        <updated>2014-03-18T19:55:38-03:00</updated>
-        <content type="text">SendgridTests Documentation (v1.0.0)</content>
-        <link rel="enclosure" type="application/octet-stream" href="http:/www.sendgrid.com/SendGrid/com.SendGrid.SendgridTests-1.0.xar" length="1349674"></link>
-        <docset:identifier>com.SendGrid.SendgridTests</docset:identifier>
+        <id>tag:www.sendgrid.com,2014-03-19:com.SendGrid.Sample/1.0.0</id>
+        <title type="text">Sample Documentation</title>
+        <updated>2014-03-19T12:24:34-03:00</updated>
+        <content type="text">Sample Documentation (v1.0.0)</content>
+        <link rel="enclosure" type="application/octet-stream" href="http:/www.sendgrid.com/SendGrid/com.SendGrid.Sample-1.0.xar" length="1010005"></link>
+        <docset:identifier>com.SendGrid.Sample</docset:identifier>
         <docset:version>1.0.0</docset:version>
         <docset:minimumXcodeVersion>3.0.0</docset:minimumXcodeVersion>
     </entry>

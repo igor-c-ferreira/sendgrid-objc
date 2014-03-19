@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EmailViewController : UIViewController
+@interface EmailViewController : UIViewController <UITextFieldDelegate, UITextViewDelegate>
 
 @property (nonatomic, assign) BOOL useSMTP;
 

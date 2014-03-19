@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Classes/Sendgrid.html">
+	<File path="Categories/UIActivityIndicatorView+AFNetworking.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cl/Sendgrid</TokenIdentifier>
-			<Abstract type="html">Main class</Abstract>
-			<DeclaredIn>Sendgrid.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/UIActivityIndicatorView(AFNetworking)</TokenIdentifier>
+			<Abstract type="html">This category adds methods to the UIKit framework&apos;s UIActivityIndicatorView class. The methods in this category provide support for automatically starting and stopping animation depending on the loading state of a request operation or session task.</Abstract>
+			<DeclaredIn>UIActivityIndicatorView+AFNetworking.h</DeclaredIn>
             
 			
 			<NodeRef refid="21"/>
@@ -13,120 +13,36 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/clm/Sendgrid/sharedInstance</TokenIdentifier>
-			<Abstract type="html">Shared instance (Singleton)</Abstract>
-			<DeclaredIn>Sendgrid.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIActivityIndicatorView/setAnimatingWithStateOfTask:</TokenIdentifier>
+			<Abstract type="html">Binds the animating state to the state of the specified task.</Abstract>
+			<DeclaredIn>UIActivityIndicatorView+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>+ (instancetype)sharedInstance</Declaration>
-			
-			
-			<Anchor>//api/name/sharedInstance</Anchor>
-            <NodeRef refid="21"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sendgrid/configSendgridWithUser:andPassword:</TokenIdentifier>
-			<Abstract type="html">Config the shared instance with a SendGrid user and a SendGrid password</Abstract>
-			<DeclaredIn>Sendgrid.h</DeclaredIn>
-			
-			<Declaration>- (void)configSendgridWithUser:(NSString *)user andPassword:(NSString *)password</Declaration>
+			<Declaration>- (void)setAnimatingWithStateOfTask:(NSURLSessionTask *)task</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>user</Name>
-					<Abstract type="html">The SendGrid user</Abstract>
-				</Parameter><Parameter>
-					<Name>password</Name>
-					<Abstract type="html">The SendGrid password</Abstract>
+					<Name>task</Name>
+					<Abstract type="html">The task. If nil, automatic updating from any previously specified operation will be disabled.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/configSendgridWithUser:andPassword:</Anchor>
+			<Anchor>//api/name/setAnimatingWithStateOfTask:</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sendgrid/createNewMessage</TokenIdentifier>
-			<Abstract type="html">Create a new message with a empty SendgridSmtpOptions</Abstract>
-			<DeclaredIn>Sendgrid.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIActivityIndicatorView/setAnimatingWithStateOfOperation:</TokenIdentifier>
+			<Abstract type="html">Binds the animating state to the execution state of the specified operation.</Abstract>
+			<DeclaredIn>UIActivityIndicatorView+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>- (SendgridMessage *)createNewMessage</Declaration>
-			
-			<ReturnValue><Abstract type="html">Empty message</Abstract></ReturnValue>
-			<Anchor>//api/name/createNewMessage</Anchor>
-            <NodeRef refid="21"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sendgrid/createNewMessageWithSmtpOptions:</TokenIdentifier>
-			<Abstract type="html">Create a new message with a empty SendgridSmtpOptions</Abstract>
-			<DeclaredIn>Sendgrid.h</DeclaredIn>
-			
-			<Declaration>- (SendgridMessage *)createNewMessageWithSmtpOptions:(SendgridSmtpOptions *)options</Declaration>
+			<Declaration>- (void)setAnimatingWithStateOfOperation:(AFURLConnectionOperation *)operation</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>options</Name>
-					<Abstract type="html">The SendgridSmtpOptions that will be associated to the message</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">Empty message</Abstract></ReturnValue>
-			<Anchor>//api/name/createNewMessageWithSmtpOptions:</Anchor>
-            <NodeRef refid="21"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sendgrid/sendMessage:withSuccess:andError:</TokenIdentifier>
-			<Abstract type="html">Async operation to send the message</Abstract>
-			<DeclaredIn>Sendgrid.h</DeclaredIn>
-			
-			<Declaration>- (void)sendMessage:(SendgridMessage *)message withSuccess:(void ( ^ ) ( NSString *message ))success andError:(void ( ^ ) ( NSString *message , NSArray *errors ))error</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>message</Name>
-					<Abstract type="html">Message that will be sent</Abstract>
-				</Parameter><Parameter>
-					<Name>success</Name>
-					<Abstract type="html">Block that will be called in the success of the operation</Abstract>
-				</Parameter><Parameter>
-					<Name>error</Name>
-					<Abstract type="html">Block that will be called in the error of the operation</Abstract>
+					<Name>operation</Name>
+					<Abstract type="html">The operation. If nil, automatic updating from any previously specified operation will be disabled.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/sendMessage:withSuccess:andError:</Anchor>
-            <NodeRef refid="21"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sendgrid/saveDraft:</TokenIdentifier>
-			<Abstract type="html">Operation to save a message to the NSUserDefault</Abstract>
-			<DeclaredIn>Sendgrid.h</DeclaredIn>
-			
-			<Declaration>- (NSString *)saveDraft:(SendgridMessage *)message</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>message</Name>
-					<Abstract type="html">Message that will be saved</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The token of the saved draft</Abstract></ReturnValue>
-			<Anchor>//api/name/saveDraft:</Anchor>
-            <NodeRef refid="21"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/Sendgrid/loadDraft:</TokenIdentifier>
-			<Abstract type="html">Load a saved draft</Abstract>
-			<DeclaredIn>Sendgrid.h</DeclaredIn>
-			
-			<Declaration>- (SendgridMessage *)loadDraft:(NSString *)token</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>token</Name>
-					<Abstract type="html">The token of the saved draft</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The saved message</Abstract></ReturnValue>
-			<Anchor>//api/name/loadDraft:</Anchor>
+			<Anchor>//api/name/setAnimatingWithStateOfOperation:</Anchor>
             <NodeRef refid="21"/>
 		</Token>
 		

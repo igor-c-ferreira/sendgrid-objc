@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIRefreshControl+AFNetworking.html">
+	<File path="Protocols/AFURLResponseSerialization.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIRefreshControl(AFNetworking)</TokenIdentifier>
-			<Abstract type="html">This category adds methods to the UIKit framework&apos;s UIRefreshControl class. The methods in this category provide support for automatically begining and ending refreshing depending on the loading state of a request operation or session task.</Abstract>
-			<DeclaredIn>UIRefreshControl+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intf/AFURLResponseSerialization</TokenIdentifier>
+			<Abstract type="html">The AFURLResponseSerialization protocol is adopted by an object that decodes data into a more useful object representation, according to details in the server response. Response serializers may additionally perform validation on the incoming response and data.</Abstract>
+			<DeclaredIn>AFURLResponseSerialization.h</DeclaredIn>
             
 			
 			<NodeRef refid="31"/>
@@ -13,36 +13,25 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIRefreshControl/setRefreshingWithStateOfTask:</TokenIdentifier>
-			<Abstract type="html">Binds the refreshing state to the state of the specified task.</Abstract>
-			<DeclaredIn>UIRefreshControl+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/intfm/AFURLResponseSerialization/responseObjectForResponse:data:error:</TokenIdentifier>
+			<Abstract type="html">The response object decoded from the data associated with a specified response.</Abstract>
+			<DeclaredIn>AFURLResponseSerialization.h</DeclaredIn>
 			
-			<Declaration>- (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task</Declaration>
+			<Declaration>- (id)responseObjectForResponse:(NSURLResponse *)response data:(NSData *)data error:(NSError *__autoreleasing *)error</Declaration>
 			<Parameters>
 				<Parameter>
-					<Name>task</Name>
-					<Abstract type="html">The task. If nil, automatic updating from any previously specified operation will be diabled.</Abstract>
+					<Name>response</Name>
+					<Abstract type="html">The response to be processed.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">The response data to be decoded.</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">The error that occurred while attempting to decode the response data.</Abstract>
 				</Parameter>
 			</Parameters>
-			
-			<Anchor>//api/name/setRefreshingWithStateOfTask:</Anchor>
-            <NodeRef refid="31"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIRefreshControl/setRefreshingWithStateOfOperation:</TokenIdentifier>
-			<Abstract type="html">Binds the refreshing state to the execution state of the specified operation.</Abstract>
-			<DeclaredIn>UIRefreshControl+AFNetworking.h</DeclaredIn>
-			
-			<Declaration>- (void)setRefreshingWithStateOfOperation:(AFURLConnectionOperation *)operation</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>operation</Name>
-					<Abstract type="html">The operation. If nil, automatic updating from any previously specified operation will be disabled.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/setRefreshingWithStateOfOperation:</Anchor>
+			<ReturnValue><Abstract type="html">The object decoded from the specified response data.</Abstract></ReturnValue>
+			<Anchor>//api/name/responseObjectForResponse:data:error:</Anchor>
             <NodeRef refid="31"/>
 		</Token>
 		

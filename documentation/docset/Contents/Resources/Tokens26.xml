@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Categories/UIActivityIndicatorView+AFNetworking.html">
+	<File path="Categories/UIRefreshControl+AFNetworking.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/cat/UIActivityIndicatorView(AFNetworking)</TokenIdentifier>
-			<Abstract type="html">This category adds methods to the UIKit framework&apos;s UIActivityIndicatorView class. The methods in this category provide support for automatically starting and stopping animation depending on the loading state of a request operation or session task.</Abstract>
-			<DeclaredIn>UIActivityIndicatorView+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/cat/UIRefreshControl(AFNetworking)</TokenIdentifier>
+			<Abstract type="html">This category adds methods to the UIKit framework&apos;s UIRefreshControl class. The methods in this category provide support for automatically begining and ending refreshing depending on the loading state of a request operation or session task.</Abstract>
+			<DeclaredIn>UIRefreshControl+AFNetworking.h</DeclaredIn>
             
 			
 			<NodeRef refid="26"/>
@@ -13,28 +13,28 @@
 		
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIActivityIndicatorView/setAnimatingWithStateOfTask:</TokenIdentifier>
-			<Abstract type="html">Binds the animating state to the state of the specified task.</Abstract>
-			<DeclaredIn>UIActivityIndicatorView+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIRefreshControl/setRefreshingWithStateOfTask:</TokenIdentifier>
+			<Abstract type="html">Binds the refreshing state to the state of the specified task.</Abstract>
+			<DeclaredIn>UIRefreshControl+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>- (void)setAnimatingWithStateOfTask:(NSURLSessionTask *)task</Declaration>
+			<Declaration>- (void)setRefreshingWithStateOfTask:(NSURLSessionTask *)task</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>task</Name>
-					<Abstract type="html">The task. If nil, automatic updating from any previously specified operation will be disabled.</Abstract>
+					<Abstract type="html">The task. If nil, automatic updating from any previously specified operation will be diabled.</Abstract>
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setAnimatingWithStateOfTask:</Anchor>
+			<Anchor>//api/name/setRefreshingWithStateOfTask:</Anchor>
             <NodeRef refid="26"/>
 		</Token>
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/instm/UIActivityIndicatorView/setAnimatingWithStateOfOperation:</TokenIdentifier>
-			<Abstract type="html">Binds the animating state to the execution state of the specified operation.</Abstract>
-			<DeclaredIn>UIActivityIndicatorView+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/occ/instm/UIRefreshControl/setRefreshingWithStateOfOperation:</TokenIdentifier>
+			<Abstract type="html">Binds the refreshing state to the execution state of the specified operation.</Abstract>
+			<DeclaredIn>UIRefreshControl+AFNetworking.h</DeclaredIn>
 			
-			<Declaration>- (void)setAnimatingWithStateOfOperation:(AFURLConnectionOperation *)operation</Declaration>
+			<Declaration>- (void)setRefreshingWithStateOfOperation:(AFURLConnectionOperation *)operation</Declaration>
 			<Parameters>
 				<Parameter>
 					<Name>operation</Name>
@@ -42,7 +42,7 @@
 				</Parameter>
 			</Parameters>
 			
-			<Anchor>//api/name/setAnimatingWithStateOfOperation:</Anchor>
+			<Anchor>//api/name/setRefreshingWithStateOfOperation:</Anchor>
             <NodeRef refid="26"/>
 		</Token>
 		

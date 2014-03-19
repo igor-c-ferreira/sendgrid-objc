@@ -1,54 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Tokens version="1.0">
-	<File path="Protocols/AFImageCache.html">
+	<File path="Constants/AFNetworkReachabilityAssociation.html">
 		
 		<Token>
-			<TokenIdentifier>//apple_ref/occ/intf/AFImageCache</TokenIdentifier>
-			<Abstract type="html">The AFImageCache protocol is adopted by an object used to cache images loaded by the AFNetworking category on UIImageView.</Abstract>
-			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
+			<TokenIdentifier>//apple_ref/c/tdef/AFNetworkReachabilityAssociation</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AFNetworkReachabilityManager.m</DeclaredIn>
             
 			
 			<NodeRef refid="33"/>
 		</Token>
 		
 		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/AFImageCache/cachedImageForRequest:</TokenIdentifier>
-			<Abstract type="html">Returns a cached image for the specififed request, if available.</Abstract>
-			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
-			
-			<Declaration>- (UIImage *)cachedImageForRequest:(NSURLRequest *)request</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>request</Name>
-					<Abstract type="html">The image request.</Abstract>
-				</Parameter>
-			</Parameters>
-			<ReturnValue><Abstract type="html">The cached image.</Abstract></ReturnValue>
-			<Anchor>//api/name/cachedImageForRequest:</Anchor>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AFNetworkReachabilityForAddress</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AFNetworkReachabilityForAddress</Declaration>
+            
+            <DeclaredIn>AFNetworkReachabilityManager.m</DeclaredIn>
+            
             <NodeRef refid="33"/>
-		</Token>
-		
-		<Token>
-			<TokenIdentifier>//apple_ref/occ/intfm/AFImageCache/cacheImage:forRequest:</TokenIdentifier>
-			<Abstract type="html">Caches a particular image for the specified request.</Abstract>
-			<DeclaredIn>UIImageView+AFNetworking.h</DeclaredIn>
-			
-			<Declaration>- (void)cacheImage:(UIImage *)image forRequest:(NSURLRequest *)request</Declaration>
-			<Parameters>
-				<Parameter>
-					<Name>image</Name>
-					<Abstract type="html">The image to cache.</Abstract>
-				</Parameter><Parameter>
-					<Name>request</Name>
-					<Abstract type="html">The request to be used as a cache key.</Abstract>
-				</Parameter>
-			</Parameters>
-			
-			<Anchor>//api/name/cacheImage:forRequest:</Anchor>
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AFNetworkReachabilityForAddressPair</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AFNetworkReachabilityForAddressPair</Declaration>
+            
+            <DeclaredIn>AFNetworkReachabilityManager.m</DeclaredIn>
+            
             <NodeRef refid="33"/>
-		</Token>
-		
+        </Token>
+        
+        <Token>
+            <TokenIdentifier>//apple_ref/c/econst/AFNetworkReachabilityForName</TokenIdentifier>
+            <Abstract type="html"></Abstract>
+            <Declaration>AFNetworkReachabilityForName</Declaration>
+            
+            <DeclaredIn>AFNetworkReachabilityManager.m</DeclaredIn>
+            
+            <NodeRef refid="33"/>
+        </Token>
         
 	</File>
 </Tokens>
